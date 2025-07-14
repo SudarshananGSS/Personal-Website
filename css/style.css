@@ -1,17 +1,17 @@
 html, body {
   margin: 0;
-  background-color: #E8E8E8;
+  background-color: #f5f7fa;
 }
 
 .home-page{
-  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) no-repeat fixed, url("../images/background1.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(31, 41, 55, 0.7),rgba(31, 41, 55, 0.7)) no-repeat fixed, url("../images/background1.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
 
 .font-family{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hover-effect{
@@ -19,16 +19,20 @@ html, body {
 }
 
 .hover-effect:hover{
-  background-color: #EEEEEE;
-  color: black;
+  background-color: #eeeeee;
+  color: #1f2937;
 }
 
 .text-orange{
-  color: #E57C23;
+  color: #3E8EDE;
 }
 
 .bg-clr{
-  background-color: #DDDDDD;
+  background-color: #f0f0f0;
+}
+
+.custom-navbar{
+  background-color: #1f2937;
 }
 
 a:hover{
@@ -40,8 +44,8 @@ a:hover{
 }
 
 .nav-tabs .nav-item .nav-link.active {
-  color: black;
-  background-color: #FFA559;
+  color: #ffffff;
+  background-color: #3E8EDE;
   border: none;
 }
 
@@ -78,12 +82,12 @@ a:hover{
   }
 
   .fs-h1{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 9rem;
   }
 
   .font-family-h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 4rem;
   }
 
@@ -99,6 +103,7 @@ a:hover{
   }
 
   .font-family-p{
+    font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     text-align: left !important;
   }
@@ -138,7 +143,7 @@ a:hover{
   }
 
   .fs-h2{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 4rem;
   }
 
@@ -171,17 +176,17 @@ a:hover{
   }
 
   .fs-h1{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 4rem;
   }
 
   .fs-h2{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 2rem;
   }
 
   .font-family-h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
   }
 
@@ -196,6 +201,7 @@ a:hover{
   }
 
   .font-family-p{
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     text-align: left !important;
   }
