@@ -4,14 +4,14 @@ html, body {
 }
 
 .home-page{
-  background: linear-gradient(rgba(31, 41, 55, 0.7),rgba(31, 41, 55, 0.7)) no-repeat fixed, url("../images/background1.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(41, 39, 76, 0.7),rgba(41, 39, 76, 0.7)) no-repeat fixed, url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
 
 .font-family{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .hover-effect{
@@ -24,7 +24,7 @@ html, body {
 }
 
 .text-orange{
-  color: #3E8EDE;
+  color: #7B2CBF;
 }
 
 .bg-clr{
@@ -32,7 +32,7 @@ html, body {
 }
 
 .custom-navbar{
-  background-color: #1f2937;
+  background-color: #29274C;
 }
 
 a:hover{
@@ -82,12 +82,12 @@ a:hover{
   }
 
   .fs-h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 9rem;
   }
 
   .font-family-h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 4rem;
   }
 
@@ -103,7 +103,7 @@ a:hover{
   }
 
   .font-family-p{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 4rem;
     text-align: left !important;
   }
@@ -143,7 +143,7 @@ a:hover{
   }
 
   .fs-h2{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
   }
 
@@ -176,17 +176,17 @@ a:hover{
   }
 
   .fs-h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
   }
 
   .fs-h2{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
   }
 
   .font-family-h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
   }
 
@@ -201,7 +201,7 @@ a:hover{
   }
 
   .font-family-p{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     text-align: left !important;
   }
