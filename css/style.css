@@ -1,17 +1,26 @@
+:root {
+  --primary-bg: #fbfbfb;
+  --primary-dark: #0b1f33;
+  --accent: #ff6363;
+  --light-gray: #f1f5f9;
+}
+
 html, body {
   margin: 0;
-  background-color: #E8E8E8;
+  background-color: var(--primary-bg);
+  font-family: 'Roboto', sans-serif;
 }
 
 .home-page{
-  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) no-repeat fixed, url("../images/background1.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(11, 31, 51, 0.6),rgba(11, 31, 51, 0.6)) no-repeat fixed,
+              url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
 
 .font-family{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hover-effect{
@@ -19,29 +28,39 @@ html, body {
 }
 
 .hover-effect:hover{
-  background-color: #EEEEEE;
-  color: black;
+  background-color: var(--light-gray);
+  color: var(--primary-dark);
 }
 
 .text-orange{
-  color: #E57C23;
+  color: var(--accent);
 }
 
 .bg-clr{
-  background-color: #DDDDDD;
+  background-color: var(--light-gray);
+}
+
+.custom-navbar{
+  background-color: var(--primary-dark);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 a:hover{
   cursor: pointer;
+  color: var(--accent);
 }
 
 .nav-tabs .nav-item .nav-link{
   color: white;
 }
 
+.nav-tabs .nav-item .nav-link:hover{
+  color: var(--accent);
+}
+
 .nav-tabs .nav-item .nav-link.active {
-  color: black;
-  background-color: #FFA559;
+  color: #ffffff;
+  background-color: var(--accent);
   border: none;
 }
 
@@ -71,6 +90,8 @@ a:hover{
     width: 800px;
     margin-top: 205px;
     vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
 
   .fs-a{
@@ -78,12 +99,12 @@ a:hover{
   }
 
   .fs-h1{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Merriweather', serif;
     font-size: 9rem;
   }
 
   .font-family-h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 4rem;
   }
 
@@ -99,6 +120,7 @@ a:hover{
   }
 
   .font-family-p{
+    font-family: 'Roboto', sans-serif;
     font-size: 4rem;
     text-align: left !important;
   }
@@ -138,7 +160,7 @@ a:hover{
   }
 
   .fs-h2{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 4rem;
   }
 
@@ -164,6 +186,8 @@ a:hover{
     width: 300px;
     margin-top: 5px;
     vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
 
   .fs-a{
@@ -171,17 +195,17 @@ a:hover{
   }
 
   .fs-h1{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Merriweather', serif;
     font-size: 4rem;
   }
 
   .fs-h2{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Merriweather', serif;
     font-size: 2rem;
   }
 
   .font-family-h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
   }
 
@@ -196,6 +220,7 @@ a:hover{
   }
 
   .font-family-p{
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: left !important;
   }
