@@ -1,241 +1,470 @@
-html, body {
+:root {
+  --font-body: "Source Sans 3", "Segoe UI", Tahoma, sans-serif;
+  --font-heading: "Merriweather", Georgia, serif;
+  --color-bg: #f3f2ef;
+  --color-surface: #ffffff;
+  --color-surface-alt: #e8e5df;
+  --color-ink: #1d2430;
+  --color-muted: #5e6470;
+  --color-accent: #8c6239;
+  --color-accent-soft: #d9c5ad;
+  --color-deep: #1f2734;
+  --color-border: #c7ccd4;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-soft: 0 10px 28px rgba(18, 27, 41, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
-  background-color: #E8E8E8;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.home-page{
-  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) no-repeat fixed, url("../images/background1.jpg") no-repeat center center fixed;
+.home-page {
+  background: linear-gradient(rgba(18, 24, 33, 0.64), rgba(18, 24, 33, 0.64)) no-repeat fixed,
+    url("../images/background1.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
+  padding-bottom: clamp(2rem, 5vw, 4rem);
 }
 
-.font-family{
-  font-family: 'Montserrat', sans-serif;
+.font-family,
+.font-family-p,
+.ff-p,
+.ftext {
+  font-family: var(--font-body);
 }
 
-.hover-effect{
-  color: white;
+.font-family-h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.1vw, 1.55rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
-.hover-effect:hover{
-  background-color: #EEEEEE;
-  color: black;
+.text-orange {
+  color: var(--color-accent) !important;
 }
 
-.text-orange{
-  color: #E57C23;
+.bg-clr {
+  background-color: var(--color-surface-alt);
 }
 
-.bg-clr{
-  background-color: #DDDDDD;
+a {
+  color: inherit;
+  transition: color 0.2s ease;
 }
 
-a:hover{
+a:hover {
   cursor: pointer;
 }
 
-.nav-tabs .nav-item .nav-link{
-  color: white;
+a.text-warning:hover,
+.card-text.text-warning:hover {
+  color: #f0d7b7 !important;
 }
 
-.nav-tabs .nav-item .nav-link.active {
-  color: black;
-  background-color: #FFA559;
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+.brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+#navTabs {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  background: rgba(17, 24, 35, 0.22);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 0.25rem 0.75rem;
+}
+
+.fs-a {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.hover-effect {
+  color: #fff;
+}
+
+.hover-effect:hover {
+  background-color: #f0ede8;
+  color: #1f2734;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #fff;
   border: none;
 }
 
+.nav-tabs .nav-item .nav-link.active {
+  color: #10151f;
+  background-color: var(--color-accent-soft);
+  border: none;
+  font-weight: 600;
+}
+
+.profile {
+  height: auto;
+  width: min(300px, 28vw);
+  margin-top: 10px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.45);
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.fs-h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  font-size: clamp(2.05rem, 3vw, 3rem);
+}
+
+.home-page .fs-h1 {
+  color: #f8f6f3;
+  font-size: clamp(2.35rem, 5.2vw, 4rem);
+}
+
+.fs-h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.65rem, 2.6vw, 2.2rem);
+  letter-spacing: 0.02em;
+}
+
+.fs-p {
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  font-weight: 600;
+  color: #2f3847;
+}
+
+.font-family-p {
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  color: var(--color-muted);
+  max-width: 88ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ff-head {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+}
+
+#abt,
+#edu,
+#skill,
+#work,
+#proj {
+  padding-top: clamp(2.4rem, 4vw, 3.8rem);
+  padding-bottom: clamp(2.8rem, 4.8vw, 4.3rem);
+}
+
+#abt {
+  width: min(92%, 1100px) !important;
+}
+
+#abt .fs-h1,
+#edu .fs-h1,
+#skill .fs-h1,
+#work .fs-h1,
+#proj .fs-h1 {
+  margin-bottom: clamp(1.2rem, 2.2vw, 1.8rem);
+}
+
+.card,
+.tabs,
+.modal-content {
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-soft);
+}
+
+.card.bg-dark,
+.tabs.bg-dark,
+.modal-content.bg-dark {
+  background-color: var(--color-deep) !important;
+}
+
+.card {
+  border-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+.card .card-body {
+  padding: 1rem 1.1rem;
+}
+
+.card .card-text,
+.modal-body li,
+.tab-content li {
+  font-size: clamp(0.95rem, 1.1vw, 1.04rem);
+}
+
+.card-text.text-white {
+  font-family: var(--font-heading);
+  font-weight: 700 !important;
+  letter-spacing: 0.01em;
+}
+
+.card-img-top {
+  width: min(100%, 16.8rem);
+}
+
+.card-pro-top {
+  width: min(100%, 26rem);
+}
+
+.tabs {
+  width: min(100%, 980px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.tabs .nav-tabs {
+  padding: 0.55rem 0.55rem 0;
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.tabs .nav-link {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.tabs .tab-content {
+  padding: 0.5rem 1rem 1rem;
+}
+
+.tabs ul {
+  margin-bottom: 0;
+}
+
+.tabs li {
+  line-height: 1.7;
+}
+
+.hrule {
+  border-style: none;
+  border-top-style: solid;
+  border-color: #8e95a1;
+  border-width: 1px;
+  width: min(34%, 340px);
+  opacity: 0.6;
+}
+
+.item-ht {
+  width: min(100%, 450px);
+  height: auto;
+  border-radius: 10px;
+}
+
+.ldr_img {
+  width: 150px;
+  height: 120px;
+  border-radius: 6px;
+}
+
+.contact {
+  width: 36px;
+  height: 36px;
+}
+
+.text-algn {
+  width: 80px;
+  height: 80px;
+}
+
+.ftext {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.column-sm {
+  display: none;
+}
+
 .pulse:hover {
-  animation: pulse-animation 1s;
+  animation: pulse-animation 0.8s;
 }
 
 @keyframes pulse-animation {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 990px) {
-
-  .logo{
-    width: 75px;
-    height: 75px;
+@media only screen and (max-width: 991px) {
+  .logo {
+    width: 44px;
+    height: 44px;
   }
 
-  .brand{
-    font-size: 3rem;
+  .brand {
+    font-size: clamp(1.3rem, 4.2vw, 1.8rem);
   }
 
-  .profile{
-    height: 800px;
-    width: 800px;
-    margin-top: 205px;
-    vertical-align: middle;
+  #navTabs {
+    border: none;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 0;
   }
 
-  .fs-a{
-    font-size: 3rem;
+  #headerNavbar {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: rgba(13, 19, 28, 0.58);
   }
 
-  .fs-h1{
-    font-family: 'Sacramento', cursive;
-    font-size: 9rem;
+  .navbar-nav .ms-3,
+  .nav-item.dropdown.ms-3 {
+    margin-left: 0 !important;
   }
 
-  .font-family-h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
+  .profile {
+    width: min(72vw, 300px);
+    margin-top: 32px;
   }
 
-  .text-algn{
-    width: 200px;
-    height: 200px;
+  .fs-a {
+    font-size: 1rem;
   }
 
-  .fs-p{
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: left !important;
+  .home-page .fs-h1 {
+    font-size: clamp(2.2rem, 12vw, 3.8rem);
   }
 
-  .font-family-p{
-    font-size: 4rem;
-    text-align: left !important;
+  .font-family-h3 {
+    font-size: clamp(1rem, 4.8vw, 1.35rem);
   }
 
-  .ff-p{
-    font-size: 2.1rem;
+  .fs-p {
+    font-size: 1.05rem;
+    text-align: center !important;
   }
 
-  .ff-head{
-    font-size: 3rem;
+  .font-family-p {
+    font-size: 0.98rem;
+    text-align: center !important;
   }
 
-  .card-img-top{
-    width: 40rem;
+  .ff-p {
+    font-size: 0.95rem;
   }
 
-  .column-lg{
+  .ff-head {
+    font-size: 1.15rem;
+  }
+
+  .card-img-top,
+  .card-pro-top {
+    width: min(100%, 22rem);
+  }
+
+  .column-lg {
     display: none;
   }
 
-  .hrule{
-    border-style: none;
-    border-top-style: solid;
-    border-color: black;
-    border-width: 2px;
-    width: 40%;
+  .column-sm {
+    display: block;
   }
 
-  .item-ht{
-    width: 850px;
-    height: 500px;
+  .column-sm.w-75 {
+    width: 100% !important;
   }
 
-  .ldr_img{
-    width: 250px;
-    height: 220px;
+  .hrule {
+    width: min(60%, 260px);
   }
 
-  .fs-h2{
-    font-family: 'Sacramento', cursive;
-    font-size: 4rem;
+  .item-ht {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
-  .contact{
-    width: 55px;
-    height: 55px;
+  .ldr_img {
+    width: clamp(90px, 22vw, 130px);
+    height: auto;
   }
 
-  .ftext{
-    font-size: 1.2rem;
+  .fs-h2 {
+    font-size: clamp(1.75rem, 8vw, 2.8rem);
+  }
+
+  .contact {
+    width: 34px;
+    height: 34px;
+  }
+
+  .ftext {
+    font-size: 0.76rem;
+  }
+
+  #abt {
+    width: min(92%, 800px) !important;
+  }
+
+  #skill img {
+    width: auto !important;
+    max-width: 76px;
+    height: auto !important;
+  }
+
+  #skill img[alt="Bootstrap"] {
+    max-width: 150px;
+  }
+
+  #skill .column-sm img {
+    max-width: 78px;
+  }
+
+  #skill .column-sm img[alt="Bootstrap"] {
+    max-width: 180px;
+  }
+
+  .tabs .tab-content {
+    padding: 0.35rem 0.7rem 0.85rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-
-  .logo{
-    width: 30px;
-    height: 30px;
-  }
-
-  .profile{
-    height: 300px;
-    width: 300px;
-    margin-top: 5px;
-    vertical-align: middle;
-  }
-
-  .fs-a{
-    font-size: 1.2rem;
-  }
-
-  .fs-h1{
-    font-family: 'Sacramento', cursive;
-    font-size: 4rem;
-  }
-
-  .fs-h2{
-    font-family: 'Sacramento', cursive;
-    font-size: 2rem;
-  }
-
-  .font-family-h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-  }
-
-  .text-algn{
-    width: 80px;
-    height: 80px;
-  }
-
-  .fs-p{
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .font-family-p{
-    font-size: 1rem;
-    text-align: left !important;
-  }
-
-  .card-img-top{
-    width: 16rem;
-  }
-
-  .column-sm{
+  .column-sm {
     display: none;
-  }
-
-  .hrule{
-    border-style: none;
-    border-top-style: solid;
-    border-color: black;
-    border-width: 2px;
-    width: 30%;
-  }
-
-  .card-pro-top{
-    width: 25rem;
-  }
-
-  .item-ht{
-    width: 450px;
-    height: 250px;
-  }
-
-  .ldr_img{
-    width: 150px;
-    height: 120px;
-  }
-
-  .contact{
-    width: 35px;
-    height: 35px;
-  }
-
-  .ftext{
-    font-size: 0.6rem;
   }
 }
