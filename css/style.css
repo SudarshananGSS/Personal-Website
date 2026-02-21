@@ -186,6 +186,10 @@ a.text-warning:hover,
   padding-bottom: clamp(2.8rem, 4.8vw, 4.3rem);
 }
 
+#proj {
+  background: linear-gradient(180deg, #f7f6f2 0%, #eeebe4 100%);
+}
+
 #abt {
   width: min(92%, 1100px) !important;
 }
@@ -196,6 +200,82 @@ a.text-warning:hover,
 #work .fs-h1,
 #proj .fs-h1 {
   margin-bottom: clamp(1.2rem, 2.2vw, 1.8rem);
+}
+
+.project-focus {
+  padding: clamp(2.4rem, 4vw, 3.7rem) 0 clamp(2.8rem, 4.8vw, 4.2rem);
+  background: linear-gradient(180deg, #f6f4ef 0%, #eae5dc 100%);
+}
+
+.project-focus-shell {
+  width: min(94%, 1180px);
+}
+
+.project-eyebrow {
+  color: #6f5336;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.project-intro {
+  color: #4f5867;
+  font-size: clamp(1rem, 1.25vw, 1.13rem);
+  max-width: 70ch;
+}
+
+.project-feature-card {
+  background: #1f2734;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  padding: 1.15rem 1.15rem 1.1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.project-feature-title {
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.45;
+}
+
+.project-feature-body {
+  color: #cfd6e3;
+  font-size: 0.94rem;
+  line-height: 1.62;
+}
+
+.project-feature-link {
+  color: #e0be98;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-feature-link:hover {
+  color: #f1d8bc;
+}
+
+.project-cta-wrap {
+  margin-top: 1.25rem;
+}
+
+.project-cta-btn {
+  display: inline-block;
+  background: #2b3647;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.62rem 1.2rem;
+}
+
+.project-cta-btn:hover {
+  color: #ffffff;
+  background: #334158;
 }
 
 .card,
@@ -242,6 +322,7 @@ a.text-warning:hover,
 .tabs {
   width: min(100%, 980px);
   border: 1px solid rgba(255, 255, 255, 0.14);
+  padding-bottom: 0.3rem;
 }
 
 .tabs .nav-tabs {
@@ -354,6 +435,22 @@ a.text-warning:hover,
   .navbar-nav .ms-3,
   .nav-item.dropdown.ms-3 {
     margin-left: 0 !important;
+  }
+
+  .project-focus-shell {
+    width: min(94%, 820px);
+  }
+
+  .project-intro {
+    font-size: 0.98rem;
+  }
+
+  .project-feature-title {
+    font-size: 0.98rem;
+  }
+
+  .project-feature-body {
+    font-size: 0.9rem;
   }
 
   .profile {
