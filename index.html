@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script defer data-domain="sudarshanangss.github.io" src="https://plausible.io/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </head>
@@ -19,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid" id="navTabs">
         <a class="navbar-brand text-white brand">
-          <img src="images/SG.png" class="d-inline-block align-top ms-2 rounded logo" alt="">
+          <img src="images/SG.png" class="d-inline-block align-top ms-2 rounded logo" alt="" loading="eager" decoding="async">
             Sudarshanan
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,14 +46,22 @@
         </div>
       </div>
     </nav>
+    <div class="quick-actions text-center">
+      <a class="quick-action-link" href="index.html#proj">View Projects</a>
+      <a class="quick-action-link" href="SudarshananResume_1.pdf" target="_blank" download>Resume</a>
+      <a class="quick-action-link" href="https://github.com/SudarshananGSS" target="_blank">GitHub</a>
+      <a class="quick-action-link" href="https://www.linkedin.com/in/sudarshanan-santharam-9a596a192/" target="_blank">LinkedIn</a>
+      <a class="quick-action-link" href="mailto:sudarshanangss@gmail.com">Email</a>
+    </div>
     <div class="text-center">
-      <img class="profile" src="images/circle_sudarshanan.png" alt="Sudarshanan-Profile-Img" />
+      <img class="profile" src="images/circle_sudarshanan.png" alt="Sudarshanan-Profile-Img"  loading="eager" decoding="async"/>
       <p class="text-white font-family fs-h1 mt-2 mb-0">I'm Sudarshanan</p>
+      <p class="hero-value mb-2">Software Engineer | Machine Learning & NLP | 3+ Years Industry Experience</p>
       <div class="mx-auto text-center">
-        <a href="https://www.linkedin.com/in/sudarshanan-santharam-9a596a192/" target="_blank"><img class="contact ms-3 mt-0 mb-2 pulse" src="images/linkedin.png" alt="LinkedIn"/></a>
-        <a href="https://github.com/SudarshananGSS" target="_blank"><img class="contact ms-3 mt-0 mb-2 pulse bg-dark rounded-pill" src="images/github1.png" alt="GitHub"/></a>
-        <a href="mailto:sudarshanangss@gmail.com" target="_blank"><img class="contact ms-3 mt-0 mb-2 pulse" src="images/gmail.png" alt="Gmail"/></a>
-        <a href="SudarshananResume_1.pdf" target="_blank" download><img class="contact ms-3 mt-0 mb-2 pulse" src="images/curriculum-vitae.png" alt="Resume"/></a>
+        <a href="https://www.linkedin.com/in/sudarshanan-santharam-9a596a192/" target="_blank"><img class="contact ms-3 mt-0 mb-2 pulse" src="images/linkedin.png" alt="LinkedIn" loading="lazy" decoding="async"/></a>
+        <a href="https://github.com/SudarshananGSS" target="_blank"><img class="contact ms-3 mt-0 mb-2 pulse bg-dark rounded-pill" src="images/github1.png" alt="GitHub" loading="lazy" decoding="async"/></a>
+        <a href="mailto:sudarshanangss@gmail.com" target="_blank"><img class="contact ms-3 mt-0 mb-2 pulse" src="images/gmail.png" alt="Gmail" loading="lazy" decoding="async"/></a>
+        <a href="SudarshananResume_1.pdf" target="_blank" download><img class="contact ms-3 mt-0 mb-2 pulse" src="images/curriculum-vitae.png" alt="Resume" loading="lazy" decoding="async"/></a>
       </div>
       <a href="index.html" class="typewrite text-white font-family-h3 text-decoration-none mt-3" data-period="2000" data-type='[ "a programmer.", "a problem solver.","an analytical thinker." ]'>
         <span class="wrap"></span>
@@ -62,11 +71,12 @@
   <div class="mx-auto w-75 text-center" id="abt">
       <p class="text-dark mt-3 fs-h1">About</p>
       <p class="text-dark fs-p">Master of Information Technology at RMIT |Ex Sr. Software Engineer @ Ribbon Communications </p>
-      <p class="text-dark font-family-p mt-4 text-center">
-        Software Engineer and Machine Learning enthusiast with over 3 years of industry experience. Skilled in coding, debugging,
-developing machine learning models, and deploying applications on cloud and virtualized infrastructures. Recently graduated with a
-master's degree in computer science with a focus on AI, honing skills, and staying abreast of technological advancements.
-      </p>
+      <ul class="about-highlights font-family-p mt-4 text-start">
+        <li>3+ years of software engineering experience across communication platforms and automation systems.</li>
+        <li>Specialized in machine learning, NLP, and data-driven engineering solutions with production focus.</li>
+        <li>Strong in Python, backend development, cloud deployment, and performance-oriented debugging.</li>
+        <li>Master of Information Technology (AI focus), committed to practical and scalable technology delivery.</li>
+      </ul>
   </div>
   <div class="container-fluid project-focus" id="project-focus">
     <div class="project-focus-shell mx-auto">
@@ -124,14 +134,191 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
       </div>
     </div>
   </div>
+  <div class="container-fluid mx-auto text-center" id="proj">
+    <p class="project-eyebrow mb-2">Primary Section</p>
+    <p class="text-dark mt-1 fs-h1">Project Portfolio</p>
+    <p class="project-intro mx-auto mb-4">
+      Selected projects across Machine Learning, NLP, Application Development, and Database Engineering.
+    </p>
+    <div class="row column-lg">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="bg-dark bg-gradient mx-auto rounded mt-2 tabs mb-5">
+            <ul class="nav nav-tabs border-dark" id="resTabDesktop" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="mlproj-tab" data-bs-toggle="tab" data-bs-target="#mlproj" type="button" role="tab" aria-controls="mlproj" aria-selected="true">Machine Learning</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="appdev-tab" data-bs-toggle="tab" data-bs-target="#appdev" type="button" role="tab" aria-controls="appdev" aria-selected="false">App Development</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link ff-p" id="nlp-tab-desktop" data-bs-toggle="tab" data-bs-target="#nlp-desktop" type="button" role="tab" aria-controls="nlp-desktop" aria-selected="false">NLP</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="db-tab" data-bs-toggle="tab" data-bs-target="#db" type="button" role="tab" aria-controls="db" aria-selected="false">Database</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContentDesktop">
+              <div class="tab-pane fade show active" id="mlproj" role="tabpanel" aria-labelledby="mlproj-tab">
+                <ul class="text-start">
+                  <li class="mt-3 text-orange">
+                    <strong>Multimodal Deep Learning Model for Visual Entailment</strong> -                     built a multimodal classifier integrating BERT-Small for text and ResNet-101 for images with fusion layers (Gated Fusion, CBP, Transformer aggregation) for image–text entailment.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/multimodal-visual-entailment" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange">
+                    <strong>White Blood Cell Classification using Multi-Task CNN</strong> -                     single TensorFlow/Keras model that classifies WBC types and predicts morphological features
+                    (cell shape, nucleus shape, cytoplasm vacuole) from microscopy images.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/white-blood-cell-classification" target="_blank">[GitHub]</a>
+                  </li>
+
+                  <li class="mt-3 text-orange">
+                    <strong>Chatbot Performance Prediction</strong> - building regression models to predict TARGET_Capacity (system capacity in concurrent users) and TARGET_CaseCount (number of support cases handled).
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/chatbot-performance-regression" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange">
+                    <strong>Reinforcement Learning-Based Packet Scheduling for QoS-Aware Network Routers</strong> - implements an RL agent to optimize packet scheduling across traffic classes in a simulated router.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/packet-scheduling-rl" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange">
+                    <strong>Wine Quality Prediction and Clustering</strong> - regression, classification, and clustering analysis of wine quality based on physicochemical data.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/wine-quality-prediction-models" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange">
+                    <strong>School-Age Connectivity Data Cleaning and Analysis</strong> - Python-based data cleaning and pattern exploration of global connectivity for school-age children.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/global-digital-connectivity-analysis" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange">
+                    <strong>Movie Recommendation System using kNN and Matrix Factorization</strong> - collaborative filtering system built on the MovieLens 1M dataset with multiple evaluation metrics.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/movie-recommendation-system" target="_blank">[GitHub]</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade show" id="appdev" role="tabpanel" aria-labelledby="appdev-tab">
+                <ul class="text-start">
+                  <li class="mt-3 text-orange">
+                    JavaFX desktop application for booking and managing event tickets with secure login, real-time seat availability, and SQLite-based persistent storage.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/TheSuperEvent-BookingApp" target="_blank">[GitHub]</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade show" id="nlp-desktop" role="tabpanel" aria-labelledby="nlp-tab-desktop">
+                <ul class="text-start">
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>Multi-Agent LLM System for Automated Survey Analysis</strong> - developed a multi-agent pipeline using BM25, FAISS, RRF/MMR, LLM reranking, and stance classification to generate evidence-backed insights.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/multi-agent-llm-pipeline" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>Information Retrieval Pipeline</strong> - implemented an end-to-end IR pipeline with HTML cleaning, n-grams, positional indexing, TF-IDF variants, and semantic vector aggregation for improved retrieval performance.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/information-retrieval-pipeline" target="_blank">[GitHub]</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade show" id="db" role="tabpanel" aria-labelledby="db-tab">
+                <ul class="text-start">
+                  <li class="mt-3 text-orange">
+                    This project focuses on designing and querying a relational database based on global COVID-19 vaccination data. It involves end-to-end work from data modeling and schema creation to SQL-based analysis and result visualization.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/Database-Design-COVID19-Vaccinations" target="_blank">[GitHub]</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row column-sm">
+      <div class="col-sm-12">
+        <div class="bg-dark bg-gradient mx-auto rounded mt-2 tabs mb-5">
+            <ul class="nav nav-tabs border-dark" id="resTabMobile" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active ff-p" id="mlproj-tab1" data-bs-toggle="tab" data-bs-target="#mlproj1" type="button" role="tab" aria-controls="mlproj1" aria-selected="true">Machine Learning</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link ff-p" id="appdev-tab1" data-bs-toggle="tab" data-bs-target="#appdev1" type="button" role="tab" aria-controls="appdev1" aria-selected="false">App Development</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link ff-p" id="nlp-tab-mobile" data-bs-toggle="tab" data-bs-target="#nlp-mobile" type="button" role="tab" aria-controls="nlp-mobile" aria-selected="false">NLP</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link ff-p" id="db-tab1" data-bs-toggle="tab" data-bs-target="#db1" type="button" role="tab" aria-controls="db1" aria-selected="false">Database</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContentMobile">
+              <div class="tab-pane fade show active" id="mlproj1" role="tabpanel" aria-labelledby="mlproj-tab1">
+                <ul class="text-start">
+                  <li class="mt-3 text-orange">
+                    <strong>Multimodal Deep Learning Model for Visual Entailment</strong> -                     built a multimodal classifier integrating BERT-Small for text and ResNet-101 for images with fusion layers (Gated Fusion, CBP, Transformer aggregation) for image–text entailment.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/multimodal-visual-entailment" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange">
+                    <strong>White Blood Cell Classification using Multi-Task CNN</strong> -                     single TensorFlow/Keras model that classifies WBC types and predicts morphological features
+                    (cell shape, nucleus shape, cytoplasm vacuole) from microscopy images.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/white-blood-cell-classification" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>Chatbot Performance Prediction</strong> - building regression models to predict TARGET_Capacity (system capacity in concurrent users) and TARGET_CaseCount (number of support cases handled).
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/chatbot-performance-regression" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>Reinforcement Learning-Based Packet Scheduling for QoS-Aware Network Routers</strong> - implements an RL agent to optimize packet scheduling across traffic classes in a simulated router.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/packet-scheduling-rl" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>Wine Quality Prediction and Clustering</strong> - regression, classification, and clustering analysis of wine quality based on physicochemical data.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/wine-quality-prediction-models" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>School-Age Connectivity Data Cleaning and Analysis</strong> - Python-based data cleaning and pattern exploration of global connectivity for school-age children.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/global-digital-connectivity-analysis" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>Movie Recommendation System using kNN and Matrix Factorization</strong> - collaborative filtering system built on the MovieLens 1M dataset with multiple evaluation metrics.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/movie-recommendation-system" target="_blank">[GitHub]</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade show" id="appdev1" role="tabpanel" aria-labelledby="appdev-tab1">
+                <ul class="text-start">
+                  <li class="mt-3 text-orange ff-p">
+                    JavaFX desktop application for booking and managing event tickets with secure login, real-time seat availability, and SQLite-based persistent storage.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/TheSuperEvent-BookingApp" target="_blank">[GitHub]</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade show" id="nlp-mobile" role="tabpanel" aria-labelledby="nlp-tab-mobile">
+                <ul class="text-start">
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>Multi-Agent LLM System for Automated Survey Analysis</strong> - developed a multi-agent pipeline using BM25, FAISS, RRF/MMR, LLM reranking, and stance classification to generate evidence-backed insights.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/multi-agent-llm-pipeline" target="_blank">[GitHub]</a>
+                  </li>
+                  <li class="mt-3 text-orange ff-p">
+                    <strong>Information Retrieval Pipeline</strong> - implemented an end-to-end IR pipeline with HTML cleaning, n-grams, positional indexing, TF-IDF variants, and semantic vector aggregation for improved retrieval performance.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/information-retrieval-pipeline" target="_blank">[GitHub]</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade show" id="db1" role="tabpanel" aria-labelledby="db-tab1">
+                <ul class="text-start">
+                  <li class="mt-3 text-orange ff-p">
+                    This project focuses on designing and querying a relational database based on global COVID-19 vaccination data. It involves end-to-end work from data modeling and schema creation to SQL-based analysis and result visualization.
+                    <a class="text-warning" href="https://github.com/SudarshananGSS/Database-Design-COVID19-Vaccinations" target="_blank">[GitHub]</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   <div class="container-fluid text-center bg-clr" id="edu">
     <p class="text-dark mt-3 fs-h1">Education</p>
     <div class="row column-lg">
       <div class="col-md-3"></div>
       <div class="col-md-3">
-        <p class="text-dark text-center fw-bold">July 2024 - June 2026</p>
+        <p class="text-dark text-center fw-bold">Jul 2024 - Jun 2026</p>
         <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <img class="img-fluid" alt="event-img" src='images/rmit_logo_resize.jpg'>
+            <img class="img-fluid" alt="event-img" src='images/rmit_logo_resize.jpg' loading="lazy" decoding="async">
             <div class="card-body">
               <p class="card-text text-white text-center fw-bold mb-0">RMIT University, Melbourne</p>
               <p class="card-text text-orange mb-0">Master of Information Technology</p>
@@ -141,9 +328,9 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
         </div>
       </div>
       <div class="col-md-3">
-        <p class="text-dark text-center fw-bold">August 2017 - July 2021</p>
+        <p class="text-dark text-center fw-bold">Aug 2017 - Jul 2021</p>
         <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <img class="img-fluid" alt="event-img" src='images/annauniversity_logo.png'>
+            <img class="img-fluid" alt="event-img" src='images/annauniversity_logo.png' loading="lazy" decoding="async">
             <div class="card-body">
               <p class="card-text text-white text-center fw-bold mb-0">St Joseph's College of Engineering, Chennai</p>
               <p class="card-text text-orange mb-0">Bachelor's In Electronics and Communication Engineering</p>
@@ -159,9 +346,9 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
     </div>
         <div class="row column-sm">
       <div class="col-sm-12">
-        <p class="text-dark text-center fw-bold ff-p">January 2023 - June 2024</p>
+        <p class="text-dark text-center fw-bold ff-p">Jan 2023 - Jun 2024</p>
         <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <img class="img-fluid" alt="event-img" src='images/rmit_logo_resize.jpg'>
+            <img class="img-fluid" alt="event-img" src='images/rmit_logo_resize.jpg' loading="lazy" decoding="async">
             <div class="card-body">
               <p class="card-text text-white text-center fw-bold ff-p mb-0">RMIT University, Melbourne</p>
               <p class="card-text text-orange ff-p mb-0">Master of Information Technology</p>
@@ -171,9 +358,9 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
         </div>
       </div>
       <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold ff-p">June 2010 - July 2014</p>
+        <p class="text-dark text-center fw-bold ff-p">Jun 2010 - Jul 2014</p>
         <div class="card bg-dark border border-secondary mx-auto card-img-top">
-            <img class="img-fluid" alt="event-img" src='images/annauniversity_logo.png'>
+            <img class="img-fluid" alt="event-img" src='images/annauniversity_logo.png' loading="lazy" decoding="async">
             <div class="card-body">
               <p class="card-text text-white text-center fw-bold ff-p mb-0">St Joseph's College of Engineering, Chennai</p>
               <p class="card-text text-orange ff-p mb-0">Bachelor's In Electronics and Communication Engineering</p>
@@ -194,25 +381,25 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
       <div class="col-md-2"></div>
       <div class="col-md-4 border-end border-dark">
         <p class="text-dark text-center fs-4 ff-p fw-bold">Backend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/python.png" alt="Python" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/java.png" alt="Java" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/c-.png" alt="C" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/letter-c.png" alt="C++" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/sql-server.png" alt="SQL" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/python.png" alt="Python" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/java.png" alt="Java" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/c-.png" alt="C" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/letter-c.png" alt="C++" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/sql-server.png" alt="SQL" width="70" height="70"  loading="lazy" decoding="async"/>
     
-        <img class="mx-2 mt-3 mb-3" src="images/nodejs.png" alt="NodeJS" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/express.png" alt="Express" width="70" height="20" />
-        <img class="mx-2 mt-3 mb-3" src="images/flask.png" alt="Flask" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/nodejs.png" alt="NodeJS" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/express.png" alt="Express" width="70" height="20"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/flask.png" alt="Flask" width="70" height="70"  loading="lazy" decoding="async"/>
       </div>
       <div class="col-md-4 border-start border-dark">
         <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Frontend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/html-5.png" alt="HTML" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/css.png" alt="CSS" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/java-script.png" alt="JavaScript" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/html-5.png" alt="HTML" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/css.png" alt="CSS" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/java-script.png" alt="JavaScript" width="70" height="70"  loading="lazy" decoding="async"/>
         
-        <img class="mx-2 mt-3 mb-3" src="images/typescript.png" alt="TypeScript" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/angular.png" alt="AngularJS" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/bootstrap.png" alt="Bootstrap" width="170" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/typescript.png" alt="TypeScript" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/angular.png" alt="AngularJS" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/bootstrap.png" alt="Bootstrap" width="170" height="70"  loading="lazy" decoding="async"/>
 
       </div>
       <div class="col-md-2"></div>
@@ -224,21 +411,21 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
       <div class="col-md-2"></div>
       <div class="col-md-4 border-end border-dark">
         <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Platforms</p>
-        <img class="mx-2 mt-3 mb-3" src="images/gcp.png" alt="GCP" width="130" height="90" />
-        <img class="mx-2 mt-3 mb-3" src="images/aws.png" alt="AWS" width="50" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="images/github.png" alt="GitHub" width="60" height="60" />
-        <img class="mx-2 mt-3 mb-3" src="images/docker.png" alt="Docker" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/vmware.png" alt="vmware" width="60" height="60" />
-        <img class="mx-2 mt-3 mb-3" src="images/kvm.png" alt="kvm" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/gcp.png" alt="GCP" width="130" height="90"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/aws.png" alt="AWS" width="50" height="50"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/github.png" alt="GitHub" width="60" height="60"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/docker.png" alt="Docker" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/vmware.png" alt="vmware" width="60" height="60"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/kvm.png" alt="kvm" width="70" height="70"  loading="lazy" decoding="async"/>
       </div>
       <div class="col-md-4 border-start border-dark">
         <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Tools</p>
-        <img class="mx-2 mt-3 mb-3" src="images/jupyter.png" alt="Jupyter" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/vs_code.png" alt="VS Code" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/xcode.png" alt="Xcode" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/colab.png" alt="Google Colab" width="90" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/jira.png" alt="Jira" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/eclipse.png" alt="Eclipse" width="130" height="40" />
+        <img class="mx-2 mt-3 mb-3" src="images/jupyter.png" alt="Jupyter" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/vs_code.png" alt="VS Code" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/xcode.png" alt="Xcode" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/colab.png" alt="Google Colab" width="90" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/jira.png" alt="Jira" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/eclipse.png" alt="Eclipse" width="130" height="40"  loading="lazy" decoding="async"/>
       </div>
       <div class="col-md-2"></div>
     </div>
@@ -249,21 +436,21 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
       <div class="col-md-2"></div>
       <div class="col-md-4 border-end border-dark">
         <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Machine Learning</p>
-        <img class="mx-2 mt-3 mb-3" src="images/tensorflow.png" alt="TensorFlow" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/Pytorch.png" alt="PyTorch" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/scikit.png" alt="ScikitLearn" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/xgboost.png" alt="XGBoost" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/matplotlib.png" alt="Matplotlib" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/seaborn.png" alt="Seaborn" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/tensorflow.png" alt="TensorFlow" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/Pytorch.png" alt="PyTorch" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/scikit.png" alt="ScikitLearn" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/xgboost.png" alt="XGBoost" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/matplotlib.png" alt="Matplotlib" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/seaborn.png" alt="Seaborn" width="70" height="70"  loading="lazy" decoding="async"/>
       </div>
       <div class="col-md-4 border-start border-dark">
         <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">NLP</p>
-        <img class="mx-2 mt-3 mb-3" src="images/huggingface.png" alt="Hugging Face Transformer" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/nltk.png" alt="NLTK" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/Keras.png" alt="Keras" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/gensim.png" alt="Gensim" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/pandas.png" alt="Panda" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/nump.png" alt="Numpy" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/huggingface.png" alt="Hugging Face Transformer" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/nltk.png" alt="NLTK" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/Keras.png" alt="Keras" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/gensim.png" alt="Gensim" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/pandas.png" alt="Panda" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/nump.png" alt="Numpy" width="70" height="70"  loading="lazy" decoding="async"/>
       </div>
       <div class="col-md-2"></div>
     </div>
@@ -271,28 +458,28 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
     <div class="row column-sm w-75 mx-auto">
       <div class="col-sm-12">
         <p class="text-dark text-center ff-p fw-bold">Backend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/python.png" alt="Python" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/java.png" alt="Java" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/c-.png" alt="C" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/letter-c.png" alt="C++" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/sql-server.png" alt="SQL" width="150" height="150" />
+        <img class="mx-2 mt-3 mb-3" src="images/python.png" alt="Python" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/java.png" alt="Java" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/c-.png" alt="C" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/letter-c.png" alt="C++" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/sql-server.png" alt="SQL" width="150" height="150"  loading="lazy" decoding="async"/>
         
-        <img class="mx-2 mt-3 mb-3" src="images/nodejs.png" alt="NodeJS" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/express.png" alt="Express" width="200" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="images/flask.png" alt="Flask" width="150" height="150" />
+        <img class="mx-2 mt-3 mb-3" src="images/nodejs.png" alt="NodeJS" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/express.png" alt="Express" width="200" height="50"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/flask.png" alt="Flask" width="150" height="150"  loading="lazy" decoding="async"/>
       </div>
       <div class="mt-1 mb-1">
         <hr class="mx-auto hrule" />
       </div>
       <div class="col-sm-12 mt-5">
         <p class="text-dark text-center fw-bold fw-bold ff-p">Frontend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/html-5.png" alt="HTML" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/css.png" alt="CSS" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/java-script.png" alt="JavaScript" width="150" height="150" />
+        <img class="mx-2 mt-3 mb-3" src="images/html-5.png" alt="HTML" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/css.png" alt="CSS" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/java-script.png" alt="JavaScript" width="150" height="150"  loading="lazy" decoding="async"/>
    
-        <img class="mx-2 mt-3 mb-3" src="images/typescript.png" alt="TypeScript" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/angular.png" alt="AngularJS" width="150" height="150" />
-        <img class="mx-2 mt-3 mb-3" src="images/bootstrap.png" alt="Bootstrap" width="400" height="150" />
+        <img class="mx-2 mt-3 mb-3" src="images/typescript.png" alt="TypeScript" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/angular.png" alt="AngularJS" width="150" height="150"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/bootstrap.png" alt="Bootstrap" width="400" height="150"  loading="lazy" decoding="async"/>
        
       </div>
       <div class="mt-1 mb-1">
@@ -300,48 +487,48 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
       </div>
       <div class="col-sm-12 mt-5">
         <p class="text-dark text-center fw-bold fw-bold ff-p">Platforms</p>
-        <img class="mx-2 mt-3 mb-3" src="images/gcp.png" alt="GCP" width="130" height="90" />
-        <img class="mx-2 mt-3 mb-3" src="images/aws.png" alt="AWS" width="50" height="50" />
-        <img class="mx-2 mt-3 mb-3" src="images/github.png" alt="GitHub" width="60" height="60" />
-        <img class="mx-2 mt-3 mb-3" src="images/docker.png" alt="Docker" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/vmware.png" alt="vmware" width="60" height="60" />
-        <img class="mx-2 mt-3 mb-3" src="images/kvm.png" alt="kvm" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/gcp.png" alt="GCP" width="130" height="90"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/aws.png" alt="AWS" width="50" height="50"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/github.png" alt="GitHub" width="60" height="60"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/docker.png" alt="Docker" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/vmware.png" alt="vmware" width="60" height="60"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/kvm.png" alt="kvm" width="70" height="70"  loading="lazy" decoding="async"/>
       </div>
       <div class="mt-1 mb-1">
         <hr class="mx-auto hrule" />
       </div>
       <div class="col-sm-12 mt-5">
         <p class="text-dark text-center fw-bold fw-bold ff-p">Tools</p>
-        <img class="mx-2 mt-3 mb-3" src="images/jupyter.png" alt="Jupyter" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/vs_code.png" alt="VS Code" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/xcode.png" alt="Xcode" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/colab.png" alt="Google Colab" width="90" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/jira.png" alt="Jira" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/eclipse.png" alt="Eclipse" width="130" height="40" />
+        <img class="mx-2 mt-3 mb-3" src="images/jupyter.png" alt="Jupyter" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/vs_code.png" alt="VS Code" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/xcode.png" alt="Xcode" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/colab.png" alt="Google Colab" width="90" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/jira.png" alt="Jira" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/eclipse.png" alt="Eclipse" width="130" height="40"  loading="lazy" decoding="async"/>
       </div>
             <div class="mt-1 mb-1">
         <hr class="mx-auto hrule" />
       </div>
       <div class="col-sm-12 mt-5">
         <p class="text-dark text-center fw-bold fw-bold ff-p">Machine Learning</p>
-        <img class="mx-2 mt-3 mb-3" src="images/tensorflow.png" alt="TensorFlow" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/Pytorch.png" alt="PyTorch" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/scikit.png" alt="ScikitLearn" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/xgboost.png" alt="XGBoost" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/matplotlib.png" alt="Matplotlib" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/seaborn.png" alt="Seaborn" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/tensorflow.png" alt="TensorFlow" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/Pytorch.png" alt="PyTorch" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/scikit.png" alt="ScikitLearn" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/xgboost.png" alt="XGBoost" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/matplotlib.png" alt="Matplotlib" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/seaborn.png" alt="Seaborn" width="70" height="70"  loading="lazy" decoding="async"/>
       </div>
       <div class="mt-1 mb-1">
         <hr class="mx-auto hrule" />
       </div>
       <div class="col-sm-12 mt-5">
         <p class="text-dark text-center fw-bold fw-bold ff-p">NLP</p>
-        <img class="mx-2 mt-3 mb-3" src="images/huggingface.png" alt="Hugging Face Transformer" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/nltk.png" alt="NLTK" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/Keras.png" alt="Keras" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/gensim.png" alt="Gensim" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/pandas.png" alt="Panda" width="70" height="70" />
-        <img class="mx-2 mt-3 mb-3" src="images/nump.png" alt="Numpy" width="70" height="70" />
+        <img class="mx-2 mt-3 mb-3" src="images/huggingface.png" alt="Hugging Face Transformer" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/nltk.png" alt="NLTK" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/Keras.png" alt="Keras" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/gensim.png" alt="Gensim" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/pandas.png" alt="Panda" width="70" height="70"  loading="lazy" decoding="async"/>
+        <img class="mx-2 mt-3 mb-3" src="images/nump.png" alt="Numpy" width="70" height="70"  loading="lazy" decoding="async"/>
       </div>
     </div>
   </div>
@@ -363,7 +550,10 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
               </div>
             </div>
             <p class="card-text text-orange ff-p mt-3 mb-2">Senior Engineering Technical Analyst</p>
-            <p class="work-summary mb-3">Led automation modernization and performance initiatives for VoIP and SBC validation workflows.</p>
+            <ul class="work-highlights mb-3">
+              <li>Modernized automation and validation workflows for VoIP and SBC releases.</li>
+              <li>Improved release stability through stronger performance and reliability testing.</li>
+            </ul>
             <p class="text-end mb-0"><a class="card-text text-warning ff-p text-decoration-none" onclick="show_modal('seta')">Read More ></a></p>
           </div>
         </div>
@@ -380,7 +570,10 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
               </div>
             </div>
             <p class="card-text text-orange ff-p mt-3 mb-2">Engineering Technical Analyst</p>
-            <p class="work-summary mb-3">Built scalable automation frameworks and improved release confidence across cloud and edge environments.</p>
+            <ul class="work-highlights mb-3">
+              <li>Built scalable automation frameworks across Linux, cloud, and edge environments.</li>
+              <li>Raised release confidence with repeatable test coverage and issue triage speed.</li>
+            </ul>
             <p class="text-end mb-0"><a class="card-text text-warning ff-p text-decoration-none" onclick="show_modal('eta')">Read More ></a></p>
           </div>
         </div>
@@ -439,188 +632,7 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
     </div>
   </div>
 </div>
-<div class="container-fluid mx-auto text-center" id="proj">
-    <p class="project-eyebrow mb-2">Primary Section</p>
-    <p class="text-dark mt-1 fs-h1">Project Portfolio</p>
-    <p class="project-intro mx-auto mb-4">
-      Selected projects across Machine Learning, NLP, Application Development, and Database Engineering.
-    </p>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <div class="bg-dark bg-gradient mx-auto rounded mt-2 tabs mb-5">
-            <ul class="nav nav-tabs border-dark" id="resTabDesktop" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="mlproj-tab" data-bs-toggle="tab" data-bs-target="#mlproj" type="button" role="tab" aria-controls="mlproj" aria-selected="true">Machine Learning</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="appdev-tab" data-bs-toggle="tab" data-bs-target="#appdev" type="button" role="tab" aria-controls="appdev" aria-selected="false">App Development</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="nlp-tab-desktop" data-bs-toggle="tab" data-bs-target="#nlp-desktop" type="button" role="tab" aria-controls="nlp-desktop" aria-selected="false">NLP</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="db-tab" data-bs-toggle="tab" data-bs-target="#db" type="button" role="tab" aria-controls="db" aria-selected="false">Database</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContentDesktop">
-              <div class="tab-pane fade show active" id="mlproj" role="tabpanel" aria-labelledby="mlproj-tab">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange">
-                    <strong>Multimodal Deep Learning Model for Visual Entailment</strong> &mdash;
-                    built a multimodal classifier integrating BERT-Small for text and ResNet-101 for images with fusion layers (Gated Fusion, CBP, Transformer aggregation) for image–text entailment.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/multimodal-visual-entailment" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>White Blood Cell Classification using Multi-Task CNN</strong> &mdash;
-                    single TensorFlow/Keras model that classifies WBC types and predicts morphological features
-                    (cell shape, nucleus shape, cytoplasm vacuole) from microscopy images.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/white-blood-cell-classification" target="_blank">[GitHub]</a>
-                  </li>
-
-                  <li class="mt-3 text-orange">
-                    <strong>Chatbot Performance Prediction</strong> &mdash; building regression models to predict TARGET_Capacity (system capacity in concurrent users) and TARGET_CaseCount (number of support cases handled).
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/chatbot-performance-regression" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>Reinforcement Learning-Based Packet Scheduling for QoS-Aware Network Routers</strong> &mdash; implements an RL agent to optimize packet scheduling across traffic classes in a simulated router.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/packet-scheduling-rl" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>Wine Quality Prediction and Clustering</strong> &mdash; regression, classification, and clustering analysis of wine quality based on physicochemical data.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/wine-quality-prediction-models" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>School-Age Connectivity Data Cleaning and Analysis</strong> &mdash; Python-based data cleaning and pattern exploration of global connectivity for school-age children.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/global-digital-connectivity-analysis" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>Movie Recommendation System using kNN and Matrix Factorization</strong> &mdash; collaborative filtering system built on the MovieLens 1M dataset with multiple evaluation metrics.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/movie-recommendation-system" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="appdev" role="tabpanel" aria-labelledby="appdev-tab">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange">
-                    JavaFX desktop application for booking and managing event tickets with secure login, real-time seat availability, and SQLite-based persistent storage.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/TheSuperEvent-BookingApp" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="nlp-desktop" role="tabpanel" aria-labelledby="nlp-tab-desktop">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Multi-Agent LLM System for Automated Survey Analysis</strong> &mdash; developed a multi-agent pipeline using BM25, FAISS, RRF/MMR, LLM reranking, and stance classification to generate evidence-backed insights.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/multi-agent-llm-pipeline" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Information Retrieval Pipeline</strong> &mdash; implemented an end-to-end IR pipeline with HTML cleaning, n-grams, positional indexing, TF-IDF variants, and semantic vector aggregation for improved retrieval performance.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/information-retrieval-pipeline" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="db" role="tabpanel" aria-labelledby="db-tab">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange">
-                    This project focuses on designing and querying a relational database based on global COVID-19 vaccination data. It involves end-to-end work from data modeling and schema creation to SQL-based analysis and result visualization.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/Database-Design-COVID19-Vaccinations" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <div class="bg-dark bg-gradient mx-auto rounded mt-2 tabs mb-5">
-            <ul class="nav nav-tabs border-dark" id="resTabMobile" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active ff-p" id="mlproj-tab1" data-bs-toggle="tab" data-bs-target="#mlproj1" type="button" role="tab" aria-controls="mlproj1" aria-selected="true">Machine Learning</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="appdev-tab1" data-bs-toggle="tab" data-bs-target="#appdev1" type="button" role="tab" aria-controls="appdev1" aria-selected="false">App Development</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="nlp-tab-mobile" data-bs-toggle="tab" data-bs-target="#nlp-mobile" type="button" role="tab" aria-controls="nlp-mobile" aria-selected="false">NLP</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="db-tab1" data-bs-toggle="tab" data-bs-target="#db1" type="button" role="tab" aria-controls="db1" aria-selected="false">Database</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContentMobile">
-              <div class="tab-pane fade show active" id="mlproj1" role="tabpanel" aria-labelledby="mlproj-tab1">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange">
-                    <strong>Multimodal Deep Learning Model for Visual Entailment</strong> &mdash;
-                    built a multimodal classifier integrating BERT-Small for text and ResNet-101 for images with fusion layers (Gated Fusion, CBP, Transformer aggregation) for image–text entailment.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/multimodal-visual-entailment" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>White Blood Cell Classification using Multi-Task CNN</strong> &mdash;
-                    single TensorFlow/Keras model that classifies WBC types and predicts morphological features
-                    (cell shape, nucleus shape, cytoplasm vacuole) from microscopy images.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/white-blood-cell-classification" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Chatbot Performance Prediction</strong> &mdash; building regression models to predict TARGET_Capacity (system capacity in concurrent users) and TARGET_CaseCount (number of support cases handled).
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/chatbot-performance-regression" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Reinforcement Learning-Based Packet Scheduling for QoS-Aware Network Routers</strong> &mdash; implements an RL agent to optimize packet scheduling across traffic classes in a simulated router.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/packet-scheduling-rl" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Wine Quality Prediction and Clustering</strong> &mdash; regression, classification, and clustering analysis of wine quality based on physicochemical data.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/wine-quality-prediction-models" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>School-Age Connectivity Data Cleaning and Analysis</strong> &mdash; Python-based data cleaning and pattern exploration of global connectivity for school-age children.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/global-digital-connectivity-analysis" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Movie Recommendation System using kNN and Matrix Factorization</strong> &mdash; collaborative filtering system built on the MovieLens 1M dataset with multiple evaluation metrics.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/movie-recommendation-system" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="appdev1" role="tabpanel" aria-labelledby="appdev-tab1">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange ff-p">
-                    JavaFX desktop application for booking and managing event tickets with secure login, real-time seat availability, and SQLite-based persistent storage.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/TheSuperEvent-BookingApp" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="nlp-mobile" role="tabpanel" aria-labelledby="nlp-tab-mobile">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Multi-Agent LLM System for Automated Survey Analysis</strong> &mdash; developed a multi-agent pipeline using BM25, FAISS, RRF/MMR, LLM reranking, and stance classification to generate evidence-backed insights.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/multi-agent-llm-pipeline" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Information Retrieval Pipeline</strong> &mdash; implemented an end-to-end IR pipeline with HTML cleaning, n-grams, positional indexing, TF-IDF variants, and semantic vector aggregation for improved retrieval performance.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/information-retrieval-pipeline" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="db1" role="tabpanel" aria-labelledby="db-tab1">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange ff-p">
-                    This project focuses on designing and querying a relational database based on global COVID-19 vaccination data. It involves end-to-end work from data modeling and schema creation to SQL-based analysis and result visualization.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/Database-Design-COVID19-Vaccinations" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <!--div class="container-fluid text-justify bg-clr" id="leader">
+<!--div class="container-fluid text-justify bg-clr" id="leader">
     <p class="text-dark mt-3 fs-h1 text-center">Achievements</p>
     <div class="row column-lg">
       <div class="col-md-2"></div>
@@ -643,10 +655,10 @@ master's degree in computer science with a focus on AI, honing skills, and stayi
                       <li class="ms-3">Spot Award (Ribbon Communications): Awarded for outstanding efforts in resolving Algar customer issues through rigorous testing.
                       </li>
                     </ul>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\IndvidualExcellence.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\IndvidualExcellence.png" alt="Individual Excellence Award"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\TeamExcellenceAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\TeamExcellenceAward.png" alt="SpotAward"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\InspireAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\InspireAward.png" alt="InspireAward"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\SpotAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\SpotAward.png" alt="SpotAward"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/IndvidualExcellence.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/IndvidualExcellence.png" alt="Individual Excellence Award" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/TeamExcellenceAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/TeamExcellenceAward.png" alt="SpotAward" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/InspireAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/InspireAward.png" alt="InspireAward" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/SpotAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/SpotAward.png" alt="SpotAward" loading="lazy" decoding="async"/></a>
                 </ol>
               </div>
             </div>
@@ -669,11 +681,11 @@ Ribbon Hackathon Participant: Collaborated on Good to Go, a project designed for
                       </li>
                     </ul>
                   </li>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\dos_1.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\dos_1.png" alt="Day of Service at Ribbon"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\dos_2.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\dos_2.png" alt="Day of Service at Ribbon"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\dos_3.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\dos_3.png" alt="Day of Service at Ribbon"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\dos_4.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\dos_4.png" alt="Day of Service at Ribbon"/></a>
-                  <a href="https://payalrashinkar.github.io/Personal-Website/images\GoodToGo.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\GoodToGo.png" alt="Hackathon Project"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/dos_1.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/dos_1.png" alt="Day of Service at Ribbon" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/dos_2.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/dos_2.png" alt="Day of Service at Ribbon" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/dos_3.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/dos_3.png" alt="Day of Service at Ribbon" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/dos_4.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/dos_4.png" alt="Day of Service at Ribbon" loading="lazy" decoding="async"/></a>
+                  <a href="https://payalrashinkar.github.io/Personal-Website/images/GoodToGo.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/GoodToGo.png" alt="Hackathon Project" loading="lazy" decoding="async"/></a>
                 </ol>
               </div>
             </div>
@@ -688,10 +700,10 @@ Ribbon Hackathon Participant: Collaborated on Good to Go, a project designed for
                     <span class="text-orange">Undergrad Mentor:</span> Conducted proactive mentoring sessions to strengthen skills in algorithms, logical reasoning, and problem-solving; Provided detailed code reviews and constructive feedback.
                   </li>
                               
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\1chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\1chess.png" alt="Chess News"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\2chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\2chess.png" alt="Chess 2010"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\3chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\3chess.png" alt="Chess 2011"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\4chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\4chess.png" alt="Chess 2012"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/1chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/1chess.png" alt="Chess News" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/2chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/2chess.png" alt="Chess 2010" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/3chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/3chess.png" alt="Chess 2011" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/4chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/4chess.png" alt="Chess 2012" loading="lazy" decoding="async"/></a>
                 
                 </ol>
               </div>
@@ -729,10 +741,10 @@ Ribbon Hackathon Participant: Collaborated on Good to Go, a project designed for
                       <li class="ms-3">Spot Award (Ribbon Communications): Awarded for outstanding efforts in resolving Algar customer issues through rigorous testing.
                       </li>
                     </ul>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\IndvidualExcellence.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\IndvidualExcellence.png" alt="Individual Excellence Award"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\TeamExcellenceAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\TeamExcellenceAward.png" alt="SpotAward"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\InspireAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\InspireAward.png" alt="InspireAward"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\SpotAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\SpotAward.png" alt="SpotAward"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/IndvidualExcellence.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/IndvidualExcellence.png" alt="Individual Excellence Award" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/TeamExcellenceAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/TeamExcellenceAward.png" alt="SpotAward" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/InspireAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/InspireAward.png" alt="InspireAward" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/SpotAward.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/SpotAward.png" alt="SpotAward" loading="lazy" decoding="async"/></a>
                   </li>
                 </ol>
               </div>
@@ -756,11 +768,11 @@ Ribbon Hackathon Participant: Collaborated on Good to Go, a project designed for
                       </li>
                     </ul>
                   </li>
-                                      <a href="https://payalrashinkar.github.io/Personal-Website/images\dos_1.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\dos_1.png" alt="Day of Service at Ribbon"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\dos_2.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\dos_2.png" alt="Day of Service at Ribbon"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\dos_3.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\dos_3.png" alt="Day of Service at Ribbon"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\dos_4.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\dos_4.png" alt="Day of Service at Ribbon"/></a>
-                  <a href="https://payalrashinkar.github.io/Personal-Website/images\GoodToGo.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\GoodToGo.png" alt="Hackathon Project"/></a>
+                                      <a href="https://payalrashinkar.github.io/Personal-Website/images/dos_1.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/dos_1.png" alt="Day of Service at Ribbon" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/dos_2.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/dos_2.png" alt="Day of Service at Ribbon" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/dos_3.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/dos_3.png" alt="Day of Service at Ribbon" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/dos_4.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/dos_4.png" alt="Day of Service at Ribbon" loading="lazy" decoding="async"/></a>
+                  <a href="https://payalrashinkar.github.io/Personal-Website/images/GoodToGo.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/GoodToGo.png" alt="Hackathon Project" loading="lazy" decoding="async"/></a>
                 </ol>
               </div>
             </div>
@@ -775,10 +787,10 @@ Ribbon Hackathon Participant: Collaborated on Good to Go, a project designed for
                     <span class="text-orange">Undergrad Mentor:</span> Conducted proactive mentoring sessions to strengthen skills in algorithms, logical reasoning, and problem-solving; Provided detailed code reviews and constructive feedback.
                   </li>
                               
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\1chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\1chess.png" alt="Chess News"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\2chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\2chess.png" alt="Chess 2010"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\3chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\3chess.png" alt="Chess 2011"/></a>
-                    <a href="https://payalrashinkar.github.io/Personal-Website/images\4chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images\4chess.png" alt="Chess 2012"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/1chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/1chess.png" alt="Chess News" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/2chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/2chess.png" alt="Chess 2010" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/3chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/3chess.png" alt="Chess 2011" loading="lazy" decoding="async"/></a>
+                    <a href="https://payalrashinkar.github.io/Personal-Website/images/4chess.png" target="_blank"><img class="ldr_img" src="https://payalrashinkar.github.io/Personal-Website/images/4chess.png" alt="Chess 2012" loading="lazy" decoding="async"/></a>
                 </ol>
               </div>
             </div>
@@ -795,19 +807,24 @@ Ribbon Hackathon Participant: Collaborated on Good to Go, a project designed for
       </div>
     </div>
   </div-->
-  <div class="bg-dark">
+  <footer class="bg-dark site-footer">
     <p class="text-dark mt-0 mb-0">*</p>
-    <p class="text-white fs-h2 text-center mb-0">Contact Me</p>
+    <p class="text-white fs-h2 text-center mb-1">Contact Me</p>
+    <p class="text-center footer-cta mb-2">Open to software engineering, machine learning, and NLP opportunities.</p>
     <div class="mx-auto text-center">
-      <a href="https://www.linkedin.com/in/sudarshanan-santharam-9a596a192/" target="_blank"><img class="contact ms-3 mt-3 pulse" src="images/linkedin.png" alt="LinkedIn"/></a>
-      <a href="https://github.com/SudarshananGSS" target="_blank"><img class="contact ms-3 mt-3 pulse" src="images/github1.png" alt="GitHub"/></a>
-      <a href="mailto:sudarshanangss@gmail.com" target="_blank"><img class="contact ms-3 mt-3 pulse" src="images/gmail.png" alt="Gmail"/></a>
-      <a href="SudarshananResume_1.pdf" target="_blank" download><img class="contact ms-3 mt-3 pulse" src="images/curriculum-vitae.png" alt="Resume"/></a>
+      <a href="https://www.linkedin.com/in/sudarshanan-santharam-9a596a192/" target="_blank"><img class="contact ms-3 mt-3 pulse" src="images/linkedin.png" alt="LinkedIn" loading="lazy" decoding="async"/></a>
+      <a href="https://github.com/SudarshananGSS" target="_blank"><img class="contact ms-3 mt-3 pulse" src="images/github1.png" alt="GitHub" loading="lazy" decoding="async"/></a>
+      <a href="mailto:sudarshanangss@gmail.com" target="_blank"><img class="contact ms-3 mt-3 pulse" src="images/gmail.png" alt="Gmail" loading="lazy" decoding="async"/></a>
+      <a href="SudarshananResume_1.pdf" target="_blank" download><img class="contact ms-3 mt-3 pulse" src="images/curriculum-vitae.png" alt="Resume" loading="lazy" decoding="async"/></a>
     </div>
+    <div class="text-center mt-3">
+      <a class="footer-cta-btn" href="mailto:sudarshanangss@gmail.com">Contact for Opportunities</a>
+    </div>
+    <p class="text-center footer-updated mt-3 mb-0">Last updated: February 21, 2026</p>
     <p class="text-center text-warning mt-3 mb-0 ftext">
-      Copyright &#169; <a class="text-warning text-decoration-none" target="_self">2024 Sudarshanan.</a> All rights reserved.
+      Copyright &#169; <a class="text-warning text-decoration-none" target="_self">2026 Sudarshanan.</a> All rights reserved.
     </p>
     <p class="text-dark mt-0 mb-0">*</p>
-  </div>
+  </footer>
 </body>
 </html>

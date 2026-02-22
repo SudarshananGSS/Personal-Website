@@ -41,7 +41,7 @@ body {
   background: linear-gradient(rgba(18, 24, 33, 0.64), rgba(18, 24, 33, 0.64)) no-repeat fixed,
     url("../images/background1.jpg") no-repeat center center fixed;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 68vh;
   height: auto;
   width: 100%;
   padding-bottom: clamp(2rem, 5vw, 4rem);
@@ -78,6 +78,17 @@ a:hover {
   cursor: pointer;
 }
 
+a:focus-visible,
+button:focus-visible,
+.nav-link:focus-visible,
+.quick-action-link:focus-visible,
+.project-cta-btn:focus-visible,
+.footer-cta-btn:focus-visible {
+  outline: 3px solid #a8c9e8;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
 a.text-warning:hover,
 .card-text.text-warning:hover {
   color: #162c40 !important;
@@ -107,6 +118,37 @@ a.text-warning,
 .navbar {
   padding-top: 1rem;
   padding-bottom: 0.8rem;
+}
+
+.quick-actions {
+  position: sticky;
+  top: 0.25rem;
+  z-index: 20;
+  width: fit-content;
+  margin: 0.25rem auto 0.9rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(17, 24, 35, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.quick-action-link {
+  display: inline-block;
+  color: #f4f7fb !important;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.24rem 0.62rem;
+  margin: 0.12rem;
+}
+
+.quick-action-link:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .brand {
@@ -179,6 +221,13 @@ a.text-warning,
   font-size: clamp(2.35rem, 5.2vw, 4rem);
 }
 
+.hero-value {
+  color: #d9e3ee;
+  font-size: clamp(0.94rem, 1.5vw, 1.08rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
 .fs-h2 {
   font-family: var(--font-heading);
   font-weight: 700;
@@ -247,6 +296,22 @@ a.text-warning,
 #skill .ff-p,
 #proj .ff-p {
   color: #4f5f72;
+}
+
+.about-highlights {
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.1rem;
+}
+
+.about-highlights li {
+  margin-bottom: 0.65rem;
+  line-height: 1.65;
+}
+
+.about-highlights li::marker {
+  color: var(--color-accent);
 }
 
 .project-focus {
@@ -447,6 +512,21 @@ a.text-warning,
   color: var(--color-dark-body);
   font-size: 0.95rem;
   line-height: 1.65;
+}
+
+.work-highlights {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-dark-body);
+}
+
+.work-highlights li {
+  margin-bottom: 0.45rem;
+  line-height: 1.5;
+}
+
+.work-highlights li::marker {
+  color: var(--color-dark-accent);
 }
 
 .work-card a.text-warning,
@@ -684,6 +764,38 @@ a.text-warning,
   height: 36px;
 }
 
+.site-footer {
+  padding-bottom: 1.2rem;
+}
+
+.footer-cta {
+  color: #d1dced;
+  font-size: 0.95rem;
+}
+
+.footer-cta-btn {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 0.44rem 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.footer-cta-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.footer-updated {
+  color: #b9cadc;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .text-algn {
   width: 80px;
   height: 80px;
@@ -718,6 +830,24 @@ a.text-warning,
 }
 
 @media only screen and (max-width: 991px) {
+  .home-page {
+    min-height: 56vh;
+  }
+
+  .quick-actions {
+    width: min(96%, 820px);
+    border-radius: 12px;
+    top: 0.15rem;
+    margin-bottom: 0.7rem;
+    padding: 0.38rem 0.42rem;
+  }
+
+  .quick-action-link {
+    font-size: 0.78rem;
+    padding: 0.22rem 0.52rem;
+    margin: 0.08rem;
+  }
+
   .logo {
     width: 44px;
     height: 44px;
@@ -880,8 +1010,8 @@ a.text-warning,
   }
 
   .contact {
-    width: 34px;
-    height: 34px;
+    width: 42px;
+    height: 42px;
   }
 
   .ftext {

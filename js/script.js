@@ -59,4 +59,26 @@ function show_modal(modal_id){
   const profModal= document.getElementById(modal_id);
   const modalEl = new bootstrap.Modal(profModal);
   modalEl.show();
+
+  // Privacy-friendly analytics event (Plausible), if enabled.
+  if (window.plausible) {
+    window.plausible('Work Modal Open', { props: { modal: modal_id } });
+  }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Track outbound/social/action clicks without cookies (Plausible).
+  document.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (!window.plausible) return;
+      var href = link.getAttribute('href') || '';
+      if (href.startsWith('http')) {
+        window.plausible('Outbound Click', { props: { href: href } });
+      } else if (href.startsWith('mailto:')) {
+        window.plausible('Email Click');
+      } else if (href.toLowerCase().endsWith('.pdf')) {
+        window.plausible('Resume Download');
+      }
+    });
+  });
+});
