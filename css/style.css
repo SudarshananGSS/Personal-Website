@@ -1303,26 +1303,43 @@ a.text-warning,
 
 /* ── Skill category blocks ── */
 .skill-cat-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem 2.5rem;
-  justify-content: center;
-  width: min(94%, 980px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
+  width: min(94%, 900px);
   margin: 0.75rem auto 1.25rem;
+  text-align: left;
+}
+
+.skill-cat-block--wide {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(100, 130, 160, 0.18);
+  margin-bottom: 0.25rem;
+}
+
+.skill-cat-block--wide .skill-chips-row {
+  justify-content: center;
 }
 
 .skill-cat-block {
-  text-align: center;
-  flex: 0 1 auto;
+  text-align: left;
 }
 
 .skill-cat-label {
   color: #4f5f72;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.skill-chip--ai {
+  background: rgba(47, 74, 99, 0.2);
+  border-color: rgba(168, 212, 245, 0.4);
+  color: #3d5a74;
 }
 
 /* ── Hover lifts ── */
@@ -1360,7 +1377,12 @@ a.text-warning,
   }
 
   .skill-cat-grid {
-    gap: 1.2rem 1.8rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skill-cat-block--wide {
+    padding-bottom: 1rem;
   }
 }
 
