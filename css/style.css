@@ -1305,8 +1305,8 @@ a.text-warning,
 .skill-cat-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  width: min(94%, 1100px);
+  gap: 0.9rem;
+  width: min(94%, 1060px);
   margin: 0.5rem auto 1.5rem;
 }
 
@@ -1315,39 +1315,50 @@ a.text-warning,
 }
 
 .skill-cat-card {
-  background: #1d2938;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
-  padding: 1.1rem 1.2rem 1rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #94a3b8;
+  border-radius: 0 12px 12px 0;
+  padding: 1rem 1.2rem 0.9rem;
   height: 100%;
+  box-shadow: 0 1px 4px rgba(15, 30, 50, 0.06);
 }
 
+/* Per-category accent colours */
+.skill-cat-card--ai       { border-left-color: #3b82f6; }
+.skill-cat-card--lang     { border-left-color: #7c3aed; }
+.skill-cat-card--backend  { border-left-color: #0891b2; }
+.skill-cat-card--cloud    { border-left-color: #059669; }
+.skill-cat-card--ml       { border-left-color: #d97706; }
+.skill-cat-card--frontend { border-left-color: #db2777; }
+.skill-cat-card--tools    { border-left-color: #64748b; }
+
 .skill-cat-label {
-  color: #6a8aa8;
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  font-size: 0.75rem;
   font-weight: 700;
-  margin-bottom: 0.65rem;
+  color: #1e3a5f;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
 }
 
 .skill-chip {
   display: inline-flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: #b8cfe4;
-  font-size: 0.82rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 0.8rem;
   font-weight: 500;
-  border-radius: 999px;
-  padding: 0.25rem 0.7rem;
-  margin: 0.2rem 0.18rem;
+  border-radius: 6px;
+  padding: 0.22rem 0.6rem;
+  margin: 0.18rem 0.15rem;
 }
 
 .skill-chip--ai {
-  background: rgba(47, 100, 140, 0.3);
-  border-color: rgba(168, 212, 245, 0.3);
-  color: #a8d4f5;
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1e40af;
   font-weight: 600;
 }
 
@@ -1391,7 +1402,7 @@ a.text-warning,
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .skill-cat-grid {
     grid-template-columns: 1fr;
   }
