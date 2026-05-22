@@ -81,4 +81,56 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // Scrollspy — highlight active nav link as user scrolls
+  var sectionNavMap = [
+    { id: 'project-focus', section: 'projects' },
+    { id: 'proj',          section: 'projects' },
+    { id: 'abt',           section: 'about'    },
+    { id: 'edu',           section: 'edu'      },
+    { id: 'skill',         section: 'skills'   },
+    { id: 'cert',          section: 'skills'   },
+    { id: 'work',          section: 'work'     },
+    { id: 'volunteer',     section: 'work'     },
+  ];
+
+  function getActiveSection() {
+    var scrollY = window.scrollY + 120;
+    var active = null;
+    sectionNavMap.forEach(function (entry) {
+      var el = document.getElementById(entry.id);
+      if (el && el.offsetTop <= scrollY) active = entry.section;
+    });
+    return active;
+  }
+
+  function updateScrollspy() {
+    var active = getActiveSection();
+    document.querySelectorAll('.nav-link[data-section]').forEach(function (link) {
+      if (link.dataset.section === active) {
+        link.classList.add('nav-scrollspy-active');
+      } else {
+        link.classList.remove('nav-scrollspy-active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateScrollspy, { passive: true });
+  updateScrollspy();
+
+  // Back to top button
+  var backToTopBtn = document.getElementById('backToTop');
+  if (backToTopBtn) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    backToTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 });

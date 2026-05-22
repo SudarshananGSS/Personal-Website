@@ -28,13 +28,17 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="headerNavbar">
           <div class="navbar-nav">
-            <a class="nav-item nav-link text-white font-family fs-a" href="index.html#project-focus">Projects</a>
-            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#proj">Portfolio</a>
-            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#abt">About</a>
-            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#edu">Education</a>
-            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#skill">Skills</a>
-            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#cert">Certifications</a>
-            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#work">Work</a>
+            <a class="nav-item nav-link text-white font-family fs-a" href="index.html#project-focus" data-section="projects">Projects</a>
+            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#abt" data-section="about">About</a>
+            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#edu" data-section="edu">Education</a>
+            <div class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle text-white font-family fs-a" data-section="skills" id="skillsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Skills</a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="skillsDropdown">
+                <li><a class="dropdown-item font-family fs-a hover-effect" href="index.html#skill">Technical Skills</a></li>
+                <li><a class="dropdown-item font-family fs-a hover-effect" href="index.html#cert">Certifications</a></li>
+              </ul>
+            </div>
+            <a class="nav-item nav-link text-white font-family fs-a ms-3" href="index.html#work" data-section="work">Work</a>
           </div>
         </div>
       </div>
@@ -70,6 +74,24 @@
         <li>Hands-on with RAG pipelines, LLM observability, evaluation frameworks, MCP servers, and prompt engineering in real production environments.</li>
         <li>Completing a Master of Information Technology (Specialization: Intelligent Systems) at RMIT, with coursework in AI, Deep Learning, and Practical Data Science.</li>
       </ul>
+      <div class="about-stats-row">
+        <div class="about-stat">
+          <p class="about-stat-value">3+</p>
+          <p class="about-stat-label">Years Experience</p>
+        </div>
+        <div class="about-stat">
+          <p class="about-stat-value">AI Engineer</p>
+          <p class="about-stat-label">Current Role</p>
+        </div>
+        <div class="about-stat">
+          <p class="about-stat-value">Melbourne</p>
+          <p class="about-stat-label">Location</p>
+        </div>
+        <div class="about-stat">
+          <p class="about-stat-value">Open</p>
+          <p class="about-stat-label">To Opportunities</p>
+        </div>
+      </div>
   </div>
   <div class="container-fluid project-focus" id="project-focus">
     <div class="project-focus-shell mx-auto">
@@ -128,183 +150,81 @@
     </div>
   </div>
   <div class="container-fluid mx-auto text-center" id="proj">
-    <p class="project-eyebrow mb-2">Primary Section</p>
+    <p class="project-eyebrow mb-2">Full Portfolio</p>
     <p class="text-dark mt-1 fs-h1">Project Portfolio</p>
     <p class="project-intro mx-auto mb-4">
-      Selected projects across Machine Learning, NLP, Application Development, and Database Engineering.
+      Selected projects across AI/LLM engineering, Machine Learning, NLP, App Development, and Database Engineering.
     </p>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <div class="bg-dark bg-gradient mx-auto rounded mt-2 tabs mb-5">
-            <ul class="nav nav-tabs border-dark" id="resTabDesktop" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="mlproj-tab" data-bs-toggle="tab" data-bs-target="#mlproj" type="button" role="tab" aria-controls="mlproj" aria-selected="true">Machine Learning</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="appdev-tab" data-bs-toggle="tab" data-bs-target="#appdev" type="button" role="tab" aria-controls="appdev" aria-selected="false">App Development</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="nlp-tab-desktop" data-bs-toggle="tab" data-bs-target="#nlp-desktop" type="button" role="tab" aria-controls="nlp-desktop" aria-selected="false">NLP</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="db-tab" data-bs-toggle="tab" data-bs-target="#db" type="button" role="tab" aria-controls="db" aria-selected="false">Database</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContentDesktop">
-              <div class="tab-pane fade show active" id="mlproj" role="tabpanel" aria-labelledby="mlproj-tab">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange">
-                    <strong>Multimodal Deep Learning Model for Visual Entailment</strong> -                     built a multimodal classifier integrating BERT-Small for text and ResNet-101 for images with fusion layers (Gated Fusion, CBP, Transformer aggregation) for image–text entailment.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/multimodal-visual-entailment" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>White Blood Cell Classification using Multi-Task CNN</strong> -                     single TensorFlow/Keras model that classifies WBC types and predicts morphological features
-                    (cell shape, nucleus shape, cytoplasm vacuole) from microscopy images.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/white-blood-cell-classification" target="_blank">[GitHub]</a>
-                  </li>
-
-                  <li class="mt-3 text-orange">
-                    <strong>Chatbot Performance Prediction</strong> - building regression models to predict TARGET_Capacity (system capacity in concurrent users) and TARGET_CaseCount (number of support cases handled).
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/chatbot-performance-regression" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>Reinforcement Learning-Based Packet Scheduling for QoS-Aware Network Routers</strong> - implements an RL agent to optimize packet scheduling across traffic classes in a simulated router.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/packet-scheduling-rl" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>Wine Quality Prediction and Clustering</strong> - regression, classification, and clustering analysis of wine quality based on physicochemical data.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/wine-quality-prediction-models" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>School-Age Connectivity Data Cleaning and Analysis</strong> - Python-based data cleaning and pattern exploration of global connectivity for school-age children.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/global-digital-connectivity-analysis" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>Movie Recommendation System using kNN and Matrix Factorization</strong> - collaborative filtering system built on the MovieLens 1M dataset with multiple evaluation metrics.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/movie-recommendation-system" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="appdev" role="tabpanel" aria-labelledby="appdev-tab">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange">
-                    JavaFX desktop application for booking and managing event tickets with secure login, real-time seat availability, and SQLite-based persistent storage.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/TheSuperEvent-BookingApp" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="nlp-desktop" role="tabpanel" aria-labelledby="nlp-tab-desktop">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Multi-Agent LLM System for Automated Survey Analysis</strong> - developed a multi-agent pipeline using BM25, FAISS, RRF/MMR, LLM reranking, and stance classification to generate evidence-backed insights.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/multi-agent-llm-pipeline" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Information Retrieval Pipeline</strong> - implemented an end-to-end IR pipeline with HTML cleaning, n-grams, positional indexing, TF-IDF variants, and semantic vector aggregation for improved retrieval performance.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/information-retrieval-pipeline" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="db" role="tabpanel" aria-labelledby="db-tab">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange">
-                    This project focuses on designing and querying a relational database based on global COVID-19 vaccination data. It involves end-to-end work from data modeling and schema creation to SQL-based analysis and result visualization.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/Database-Design-COVID19-Vaccinations" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-nlp">NLP / LLM</span>
+        <p class="proj-card-title">Multi-Agent LLM System for Survey Analysis</p>
+        <p class="proj-card-desc">Multi-agent pipeline combining LLM query expansion, hybrid BM25+FAISS retrieval, LLM reranking, and stance classification — achieving a JS score of 0.308.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/multi-agent-llm-pipeline" target="_blank">GitHub →</a>
       </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="row column-sm">
-      <div class="col-sm-12">
-        <div class="bg-dark bg-gradient mx-auto rounded mt-2 tabs mb-5">
-            <ul class="nav nav-tabs border-dark" id="resTabMobile" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active ff-p" id="mlproj-tab1" data-bs-toggle="tab" data-bs-target="#mlproj1" type="button" role="tab" aria-controls="mlproj1" aria-selected="true">Machine Learning</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="appdev-tab1" data-bs-toggle="tab" data-bs-target="#appdev1" type="button" role="tab" aria-controls="appdev1" aria-selected="false">App Development</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="nlp-tab-mobile" data-bs-toggle="tab" data-bs-target="#nlp-mobile" type="button" role="tab" aria-controls="nlp-mobile" aria-selected="false">NLP</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link ff-p" id="db-tab1" data-bs-toggle="tab" data-bs-target="#db1" type="button" role="tab" aria-controls="db1" aria-selected="false">Database</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContentMobile">
-              <div class="tab-pane fade show active" id="mlproj1" role="tabpanel" aria-labelledby="mlproj-tab1">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange">
-                    <strong>Multimodal Deep Learning Model for Visual Entailment</strong> -                     built a multimodal classifier integrating BERT-Small for text and ResNet-101 for images with fusion layers (Gated Fusion, CBP, Transformer aggregation) for image–text entailment.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/multimodal-visual-entailment" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange">
-                    <strong>White Blood Cell Classification using Multi-Task CNN</strong> -                     single TensorFlow/Keras model that classifies WBC types and predicts morphological features
-                    (cell shape, nucleus shape, cytoplasm vacuole) from microscopy images.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/white-blood-cell-classification" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Chatbot Performance Prediction</strong> - building regression models to predict TARGET_Capacity (system capacity in concurrent users) and TARGET_CaseCount (number of support cases handled).
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/chatbot-performance-regression" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Reinforcement Learning-Based Packet Scheduling for QoS-Aware Network Routers</strong> - implements an RL agent to optimize packet scheduling across traffic classes in a simulated router.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/packet-scheduling-rl" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Wine Quality Prediction and Clustering</strong> - regression, classification, and clustering analysis of wine quality based on physicochemical data.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/wine-quality-prediction-models" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>School-Age Connectivity Data Cleaning and Analysis</strong> - Python-based data cleaning and pattern exploration of global connectivity for school-age children.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/global-digital-connectivity-analysis" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Movie Recommendation System using kNN and Matrix Factorization</strong> - collaborative filtering system built on the MovieLens 1M dataset with multiple evaluation metrics.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/movie-recommendation-system" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="appdev1" role="tabpanel" aria-labelledby="appdev-tab1">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange ff-p">
-                    JavaFX desktop application for booking and managing event tickets with secure login, real-time seat availability, and SQLite-based persistent storage.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/TheSuperEvent-BookingApp" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="nlp-mobile" role="tabpanel" aria-labelledby="nlp-tab-mobile">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Multi-Agent LLM System for Automated Survey Analysis</strong> - developed a multi-agent pipeline using BM25, FAISS, RRF/MMR, LLM reranking, and stance classification to generate evidence-backed insights.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/multi-agent-llm-pipeline" target="_blank">[GitHub]</a>
-                  </li>
-                  <li class="mt-3 text-orange ff-p">
-                    <strong>Information Retrieval Pipeline</strong> - implemented an end-to-end IR pipeline with HTML cleaning, n-grams, positional indexing, TF-IDF variants, and semantic vector aggregation for improved retrieval performance.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/information-retrieval-pipeline" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show" id="db1" role="tabpanel" aria-labelledby="db-tab1">
-                <ul class="text-start">
-                  <li class="mt-3 text-orange ff-p">
-                    This project focuses on designing and querying a relational database based on global COVID-19 vaccination data. It involves end-to-end work from data modeling and schema creation to SQL-based analysis and result visualization.
-                    <a class="text-warning" href="https://github.com/SudarshananGSS/Database-Design-COVID19-Vaccinations" target="_blank">[GitHub]</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-ml">Machine Learning</span>
+        <p class="proj-card-title">Multimodal Deep Learning for Visual Entailment</p>
+        <p class="proj-card-desc">BERT-Small and ResNet-101 fusion with Gated Fusion, CBP, and Transformer aggregation for image–text entailment. Accuracy: 88.4%.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/multimodal-visual-entailment" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-ml">Machine Learning</span>
+        <p class="proj-card-title">White Blood Cell Classification (Multi-Task CNN)</p>
+        <p class="proj-card-desc">Single TF/Keras multi-head CNN classifying WBC types and predicting morphological features from microscopy images using transfer learning.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/white-blood-cell-classification" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-ml">Machine Learning</span>
+        <p class="proj-card-title">RL-Based Packet Scheduling for QoS Routers</p>
+        <p class="proj-card-desc">RL agent optimizing packet prioritization across traffic classes in a simulated router. Queue delay: -35%, throughput: +22%.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/packet-scheduling-rl" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-nlp">NLP</span>
+        <p class="proj-card-title">Information Retrieval Pipeline</p>
+        <p class="proj-card-desc">End-to-end IR pipeline with HTML cleaning, n-grams, positional indexing, TF-IDF variants, and semantic vector aggregation.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/information-retrieval-pipeline" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-ml">Machine Learning</span>
+        <p class="proj-card-title">Chatbot Performance Prediction</p>
+        <p class="proj-card-desc">Regression models predicting system capacity (concurrent users) and case count for enterprise chatbot deployments.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/chatbot-performance-regression" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-ml">Machine Learning</span>
+        <p class="proj-card-title">Wine Quality Prediction and Clustering</p>
+        <p class="proj-card-desc">Regression, classification, and clustering analysis of wine quality using physicochemical data with multiple model comparisons.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/wine-quality-prediction-models" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-ml">Machine Learning</span>
+        <p class="proj-card-title">Movie Recommendation System</p>
+        <p class="proj-card-desc">Collaborative filtering using kNN and Matrix Factorization on the MovieLens 1M dataset with multiple evaluation metrics.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/movie-recommendation-system" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-ml">Machine Learning</span>
+        <p class="proj-card-title">School-Age Connectivity Data Analysis</p>
+        <p class="proj-card-desc">Python data cleaning and pattern exploration of global internet connectivity for school-age children across 180+ countries.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/global-digital-connectivity-analysis" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-app">App Development</span>
+        <p class="proj-card-title">TheSuperEvent Booking App</p>
+        <p class="proj-card-desc">JavaFX desktop app for event ticket booking with secure login, real-time seat availability, and SQLite-based persistent storage.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/TheSuperEvent-BookingApp" target="_blank">GitHub →</a>
+      </div>
+      <div class="proj-card">
+        <span class="proj-category-badge proj-badge-db">Database</span>
+        <p class="proj-card-title">COVID-19 Vaccination Database</p>
+        <p class="proj-card-desc">End-to-end relational database design, schema creation, and SQL-based analysis of global COVID-19 vaccination data with visualizations.</p>
+        <a class="proj-card-link" href="https://github.com/SudarshananGSS/Database-Design-COVID19-Vaccinations" target="_blank">GitHub →</a>
       </div>
     </div>
   </div>
-  </div>
-  <div class="container-fluid text-center bg-clr" id="edu">
+    <div class="container-fluid text-center bg-clr" id="edu">
     <p class="text-dark mt-3 fs-h1">Education</p>
     <div class="row column-lg">
       <div class="col-md-3"></div>
@@ -391,161 +311,76 @@
     <div class="mt-1 mb-3">
       <hr class="mx-auto hrule" />
     </div>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-4 border-end border-dark">
-        <p class="text-dark text-center fs-4 ff-p fw-bold">Backend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/python.png" alt="Python" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/java.png" alt="Java" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/c-.png" alt="C" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/letter-c.png" alt="C++" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/sql-server.png" alt="SQL" width="70" height="70"  loading="lazy" decoding="async"/>
-    
-        <img class="mx-2 mt-3 mb-3" src="images/nodejs.png" alt="NodeJS" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/express.png" alt="Express" width="70" height="20"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/flask.png" alt="Flask" width="70" height="70"  loading="lazy" decoding="async"/>
+    <div class="skill-cat-grid">
+      <div class="skill-cat-block">
+        <p class="skill-cat-label">Languages</p>
+        <div class="skill-chips-row">
+          <span class="skill-chip">Python</span>
+          <span class="skill-chip">Java</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">TypeScript</span>
+          <span class="skill-chip">SQL</span>
+          <span class="skill-chip">Shell Scripting</span>
+        </div>
       </div>
-      <div class="col-md-4 border-start border-dark">
-        <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Frontend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/html-5.png" alt="HTML" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/css.png" alt="CSS" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/java-script.png" alt="JavaScript" width="70" height="70"  loading="lazy" decoding="async"/>
-        
-        <img class="mx-2 mt-3 mb-3" src="images/typescript.png" alt="TypeScript" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/angular.png" alt="AngularJS" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/bootstrap.png" alt="Bootstrap" width="170" height="70"  loading="lazy" decoding="async"/>
-
+      <div class="skill-cat-block">
+        <p class="skill-cat-label">Backend &amp; Frameworks</p>
+        <div class="skill-chips-row">
+          <span class="skill-chip">FastAPI</span>
+          <span class="skill-chip">Flask</span>
+          <span class="skill-chip">Node.js</span>
+          <span class="skill-chip">Express</span>
+        </div>
       </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="mt-1 mb-1 column-lg">
-      <hr class="mx-auto hrule" />
-    </div>
-    <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-4 border-end border-dark">
-        <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Platforms</p>
-        <img class="mx-2 mt-3 mb-3" src="images/gcp.png" alt="GCP" width="130" height="90"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/aws.png" alt="AWS" width="50" height="50"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/github.png" alt="GitHub" width="60" height="60"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/docker.png" alt="Docker" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/vmware.png" alt="vmware" width="60" height="60"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/kvm.png" alt="kvm" width="70" height="70"  loading="lazy" decoding="async"/>
+      <div class="skill-cat-block">
+        <p class="skill-cat-label">Frontend</p>
+        <div class="skill-chips-row">
+          <span class="skill-chip">HTML</span>
+          <span class="skill-chip">CSS</span>
+          <span class="skill-chip">Angular</span>
+          <span class="skill-chip">Bootstrap</span>
+        </div>
       </div>
-      <div class="col-md-4 border-start border-dark">
-        <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Tools</p>
-        <img class="mx-2 mt-3 mb-3" src="images/jupyter.png" alt="Jupyter" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/vs_code.png" alt="VS Code" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/xcode.png" alt="Xcode" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/colab.png" alt="Google Colab" width="90" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/jira.png" alt="Jira" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/eclipse.png" alt="Eclipse" width="130" height="40"  loading="lazy" decoding="async"/>
+      <div class="skill-cat-block">
+        <p class="skill-cat-label">Cloud &amp; DevOps</p>
+        <div class="skill-chips-row">
+          <span class="skill-chip">AWS</span>
+          <span class="skill-chip">Azure</span>
+          <span class="skill-chip">GCP</span>
+          <span class="skill-chip">Docker</span>
+          <span class="skill-chip">Git</span>
+          <span class="skill-chip">Jenkins</span>
+          <span class="skill-chip">Linux</span>
+          <span class="skill-chip">CI/CD</span>
+        </div>
       </div>
-      <div class="col-md-2"></div>
-    </div>
-        <div class="mt-1 mb-1 column-lg">
-      <hr class="mx-auto hrule" />
-    </div>
-        <div class="row column-lg">
-      <div class="col-md-2"></div>
-      <div class="col-md-4 border-end border-dark">
-        <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">Machine Learning</p>
-        <img class="mx-2 mt-3 mb-3" src="images/tensorflow.png" alt="TensorFlow" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/Pytorch.png" alt="PyTorch" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/scikit.png" alt="ScikitLearn" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/xgboost.png" alt="XGBoost" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/matplotlib.png" alt="Matplotlib" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/seaborn.png" alt="Seaborn" width="70" height="70"  loading="lazy" decoding="async"/>
+      <div class="skill-cat-block">
+        <p class="skill-cat-label">ML &amp; Data Science</p>
+        <div class="skill-chips-row">
+          <span class="skill-chip">TensorFlow</span>
+          <span class="skill-chip">PyTorch</span>
+          <span class="skill-chip">Scikit-learn</span>
+          <span class="skill-chip">XGBoost</span>
+          <span class="skill-chip">HuggingFace</span>
+          <span class="skill-chip">Keras</span>
+          <span class="skill-chip">Pandas</span>
+          <span class="skill-chip">NumPy</span>
+          <span class="skill-chip">NLTK</span>
+          <span class="skill-chip">Matplotlib</span>
+        </div>
       </div>
-      <div class="col-md-4 border-start border-dark">
-        <p class="text-dark text-center fs-4 fw-bold fw-bold ff-p">NLP</p>
-        <img class="mx-2 mt-3 mb-3" src="images/huggingface.png" alt="Hugging Face Transformer" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/nltk.png" alt="NLTK" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/Keras.png" alt="Keras" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/gensim.png" alt="Gensim" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/pandas.png" alt="Panda" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/nump.png" alt="Numpy" width="70" height="70"  loading="lazy" decoding="async"/>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div style="color: #DDDDDD;">*</div>
-    <div class="row column-sm w-75 mx-auto">
-      <div class="col-sm-12">
-        <p class="text-dark text-center ff-p fw-bold">Backend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/python.png" alt="Python" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/java.png" alt="Java" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/c-.png" alt="C" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/letter-c.png" alt="C++" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/sql-server.png" alt="SQL" width="150" height="150"  loading="lazy" decoding="async"/>
-        
-        <img class="mx-2 mt-3 mb-3" src="images/nodejs.png" alt="NodeJS" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/express.png" alt="Express" width="200" height="50"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/flask.png" alt="Flask" width="150" height="150"  loading="lazy" decoding="async"/>
-      </div>
-      <div class="mt-1 mb-1">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">Frontend Languages</p>
-        <img class="mx-2 mt-3 mb-3" src="images/html-5.png" alt="HTML" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/css.png" alt="CSS" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/java-script.png" alt="JavaScript" width="150" height="150"  loading="lazy" decoding="async"/>
-   
-        <img class="mx-2 mt-3 mb-3" src="images/typescript.png" alt="TypeScript" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/angular.png" alt="AngularJS" width="150" height="150"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/bootstrap.png" alt="Bootstrap" width="400" height="150"  loading="lazy" decoding="async"/>
-       
-      </div>
-      <div class="mt-1 mb-1">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">Platforms</p>
-        <img class="mx-2 mt-3 mb-3" src="images/gcp.png" alt="GCP" width="130" height="90"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/aws.png" alt="AWS" width="50" height="50"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/github.png" alt="GitHub" width="60" height="60"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/docker.png" alt="Docker" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/vmware.png" alt="vmware" width="60" height="60"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/kvm.png" alt="kvm" width="70" height="70"  loading="lazy" decoding="async"/>
-      </div>
-      <div class="mt-1 mb-1">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">Tools</p>
-        <img class="mx-2 mt-3 mb-3" src="images/jupyter.png" alt="Jupyter" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/vs_code.png" alt="VS Code" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/xcode.png" alt="Xcode" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/colab.png" alt="Google Colab" width="90" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/jira.png" alt="Jira" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/eclipse.png" alt="Eclipse" width="130" height="40"  loading="lazy" decoding="async"/>
-      </div>
-            <div class="mt-1 mb-1">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">Machine Learning</p>
-        <img class="mx-2 mt-3 mb-3" src="images/tensorflow.png" alt="TensorFlow" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/Pytorch.png" alt="PyTorch" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/scikit.png" alt="ScikitLearn" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/xgboost.png" alt="XGBoost" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/matplotlib.png" alt="Matplotlib" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/seaborn.png" alt="Seaborn" width="70" height="70"  loading="lazy" decoding="async"/>
-      </div>
-      <div class="mt-1 mb-1">
-        <hr class="mx-auto hrule" />
-      </div>
-      <div class="col-sm-12 mt-5">
-        <p class="text-dark text-center fw-bold fw-bold ff-p">NLP</p>
-        <img class="mx-2 mt-3 mb-3" src="images/huggingface.png" alt="Hugging Face Transformer" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/nltk.png" alt="NLTK" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/Keras.png" alt="Keras" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/gensim.png" alt="Gensim" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/pandas.png" alt="Panda" width="70" height="70"  loading="lazy" decoding="async"/>
-        <img class="mx-2 mt-3 mb-3" src="images/nump.png" alt="Numpy" width="70" height="70"  loading="lazy" decoding="async"/>
+      <div class="skill-cat-block">
+        <p class="skill-cat-label">Tools</p>
+        <div class="skill-chips-row">
+          <span class="skill-chip">Jira</span>
+          <span class="skill-chip">Jupyter</span>
+          <span class="skill-chip">VS Code</span>
+          <span class="skill-chip">Google Colab</span>
+        </div>
       </div>
     </div>
   </div>
+    </div>
   <div class="container-fluid text-center" id="cert">
     <p class="text-dark mt-3 fs-h1">Certifications</p>
     <p class="project-intro mx-auto mb-4">Industry certifications in AI engineering, agent systems, and cloud platforms.</p>
@@ -979,5 +814,6 @@ Ribbon Hackathon Participant: Collaborated on Good to Go, a project designed for
     </p>
     <p class="text-dark mt-0 mb-0">*</p>
   </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 </body>
 </html>
