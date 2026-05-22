@@ -195,8 +195,10 @@ a.text-warning,
 }
 
 .profile {
-  height: auto;
   width: min(300px, 28vw);
+  height: min(300px, 28vw);
+  object-fit: cover;
+  object-position: center 15%;
   margin-top: 10px;
   vertical-align: middle;
   border-radius: 50%;
