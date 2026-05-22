@@ -1050,3 +1050,104 @@ a.text-warning,
     display: none;
   }
 }
+
+/* ── Agent skill chips ── */
+.skill-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  justify-content: center;
+  margin: 0.75rem auto 1.1rem;
+  width: min(90%, 860px);
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.28rem 0.72rem;
+  letter-spacing: 0.01em;
+}
+
+/* ── Certifications section ── */
+#cert {
+  padding-top: clamp(2.4rem, 4vw, 3.8rem);
+  padding-bottom: clamp(2.8rem, 4.8vw, 4.3rem);
+  background: linear-gradient(180deg, #f3f6fa 0%, #e9eef4 100%);
+}
+
+#cert .text-dark {
+  color: #223041 !important;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: min(94%, 900px);
+  margin: 0 auto 0.5rem;
+}
+
+.cert-card {
+  background: #1d2938;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  padding: 1.1rem 1.4rem 1rem;
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+  flex: 1 1 280px;
+  max-width: 420px;
+}
+
+.cert-title {
+  color: var(--color-dark-title);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.97rem;
+  line-height: 1.4;
+  margin-bottom: 0.35rem;
+}
+
+.cert-issuer {
+  color: var(--color-dark-muted);
+  font-size: 0.77rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* ── Volunteering section ── */
+#volunteer {
+  padding-top: clamp(2.4rem, 4vw, 3.8rem);
+  padding-bottom: clamp(2.8rem, 4.8vw, 4.3rem);
+}
+
+#volunteer .text-dark {
+  color: #223041 !important;
+}
+
+#volunteer .work-intro {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .cert-card {
+    flex: 1 1 240px;
+    max-width: 100%;
+  }
+
+  .cert-title {
+    font-size: 0.92rem;
+  }
+
+  .skill-chip {
+    font-size: 0.8rem;
+  }
+}
