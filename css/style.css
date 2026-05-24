@@ -876,7 +876,8 @@ a.text-warning,
 
 @media only screen and (max-width: 991px) {
   .home-page {
-    min-height: 56vh;
+    min-height: auto;
+    padding-bottom: clamp(2rem, 5vw, 3.5rem);
   }
 
   .quick-actions {
@@ -942,6 +943,12 @@ a.text-warning,
     font-size: 0.72rem;
   }
 
+  .project-cta-btn,
+  .footer-cta-btn {
+    font-size: 0.82rem;
+    padding: 0.5rem 1.1rem;
+  }
+
   .work-timeline {
     width: min(95%, 760px);
     padding-left: 2rem;
@@ -984,8 +991,10 @@ a.text-warning,
   }
 
   .profile {
-    width: min(72vw, 300px);
-    margin-top: 32px;
+    width: min(56vw, 220px);
+    height: min(56vw, 220px);
+    margin-top: 24px;
+    object-position: center 18%;
   }
 
   .fs-a {
@@ -1008,6 +1017,15 @@ a.text-warning,
   .font-family-p {
     font-size: 0.98rem;
     text-align: center !important;
+  }
+
+  /* Keep list items left-aligned even when parent is centred */
+  .about-highlights.font-family-p,
+  ul.about-highlights {
+    text-align: left !important;
+    padding-left: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .ff-p {
@@ -1461,6 +1479,13 @@ a.text-warning,
   }
 }
 
+/* 2-column cert grid on mid-range phones */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .proj-grid {
     grid-template-columns: 1fr;
@@ -1472,9 +1497,83 @@ a.text-warning,
     width: 38px;
     height: 38px;
   }
+}
 
+@media only screen and (max-width: 480px) {
   .cert-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Tighter section padding on very small phones */
+  #abt,
+  #edu,
+  #skill,
+  #work,
+  #proj,
+  #cert,
+  #volunteer {
+    padding-top: 2rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .project-focus,
+  .project-focus-shell {
+    padding-top: 2rem;
+    padding-bottom: 2.4rem;
+  }
+
+  /* Slightly smaller section headings */
+  .fs-h1 {
+    font-size: clamp(1.75rem, 9vw, 2.2rem);
+  }
+
+  .home-page .fs-h1 {
+    font-size: clamp(2rem, 11vw, 2.8rem);
+  }
+
+  /* Tighter about stats on very small screens */
+  .about-stats-row {
+    gap: 0.5rem;
+  }
+
+  .about-stat {
+    min-width: 100px;
+    padding: 0.6rem 0.85rem;
+  }
+
+  .about-stat-value {
+    font-size: 0.95rem;
+  }
+
+  /* Work timeline tighter on tiny screens */
+  .work-timeline {
+    padding-left: 1.6rem;
+  }
+
+  .work-timeline::before {
+    left: 0.5rem;
+  }
+
+  .work-marker {
+    left: -1.2rem;
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Skill grid single column at 480px */
+  .skill-cat-grid {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  /* Project feature cards tighter */
+  .project-feature-card {
+    padding: 1rem;
+  }
+
+  /* Tighter cert cards */
+  .cert-card {
+    padding: 0.9rem 1rem 0.8rem;
   }
 }
 
