@@ -1169,11 +1169,13 @@ a.text-warning,
   box-shadow: var(--shadow-soft);
   text-align: left;
   text-decoration: none;
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 a.cert-card:hover {
-  border-color: rgba(15, 118, 110, 0.6);
+  border-color: rgba(15, 118, 110, 0.7);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(18, 27, 41, 0.28);
 }
 
 .cert-title {
@@ -1183,6 +1185,14 @@ a.cert-card:hover {
   font-size: 0.97rem;
   line-height: 1.4;
   margin-bottom: 0.35rem;
+}
+
+a.cert-card .cert-title::after {
+  content: "\2197";
+  display: inline-block;
+  margin-left: 0.4rem;
+  color: #5eead4;
+  font-weight: 400;
 }
 
 .cert-issuer {
