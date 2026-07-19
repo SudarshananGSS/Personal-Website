@@ -1161,12 +1161,19 @@ a.text-warning,
 }
 
 .cert-card {
+  display: block;
   background: #1d2938;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 3px;
   padding: 1.1rem 1.4rem 1rem;
   box-shadow: var(--shadow-soft);
   text-align: left;
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+a.cert-card:hover {
+  border-color: rgba(15, 118, 110, 0.6);
 }
 
 .cert-title {
